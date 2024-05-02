@@ -409,7 +409,7 @@ function consulta_livros(listaDeConsulta) {
 }
 
 
-function remover_livro(){
-   const remover =  parseInt(prompt("Digite o id do livro a ser removido"))
-   return remover
-}
+// function remover_livro(){
+//    const remover =  parseInt(prompt("Digite o id do livro a ser removido"))
+//    return remover
+// }

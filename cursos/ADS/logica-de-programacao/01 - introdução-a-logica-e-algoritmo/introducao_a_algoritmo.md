@@ -13,7 +13,7 @@
 **O Bit:**
 - Base decimal - digítos de 0 a 9 (nós, seres humanos usamos a base decimal)
 - Base binária - digítos 0 e 1 (O computador trabalha apenas com dois digítos)
-- Todo e e qualquer computador é binário
+- Todo e qualquer computador é binário
 - Binary digit - a menor unidade de armazenamento de dados (chamado de bit).
 
 ### Sistema Operacional

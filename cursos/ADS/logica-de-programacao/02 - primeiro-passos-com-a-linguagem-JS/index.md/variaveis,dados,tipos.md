@@ -7,7 +7,7 @@ Entrada: obter dados para o meu programa via teclado, conexão de rede ou softwa
 
 Processamento: realizando operações aritmética, lógicas...
 
-    res <- x+y
+    res = x+y
 
 Saída: saida na tela para o usuário, uma led piscando, um material sendo impresso, uma informação enviada por alguma rede.
 
@@ -35,6 +35,7 @@ Saída: saida na tela para o usuário, uma led piscando, um material sendo impre
 ```
 
 ## Tema 3 - Variáveis, dados e seus tipos
+
 Um dado é toda e qualquer informação que eu consiga manipular no meu programa e que fica armazenado na memória.
 "Sequência de simbolos quantificados ou quantificáveis"(Puga, 2009)
 

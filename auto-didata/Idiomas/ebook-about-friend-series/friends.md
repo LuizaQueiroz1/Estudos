@@ -61,3 +61,72 @@
       Less vulgar way to say butt/ass, also for the back part of something.
 
 
+**Wealthy**:
+
+      Has a lot of money
+
+**Pejorative**
+
+      Talking about that person from a negative perspective.
+      synonym of pejorative is **Derogatory**
+
+**To arise**
+
+       to come into existence, to appear
+
+**Ownership**
+
+      you own it. It belongs to you.
+
+**To allocate**
+
+      means to set aside(or reserv) capital for a specific purpose.
+      "I always allocate 10% of my monthly income for savings "
+
+**conflate**
+
+      when you conflite two things, you put them in the same category, but the problem of doing this is that you end up in confusion.
+
+      "consuption" is the noun for consume
+
+**Frank**
+
+      being honest
+
+**I'm not his biggest fan**
+
+      I don't like him very much
+
+**If you ask me**
+
+      "This movie is pretty boring, if you ask me"
+
+**Deserving**
+
+      you earn the right to have that.
+      She's deserving to have a bike
+
+**Compelling**
+
+      If a product is 'compelling' it's fascinating and it gets people interested in it.
+
+      The George Orwell book, 1984, is compelling!
+
+**Goes out of business**
+
+      when a company closes or ceases to exist
+      "Americana company is going out of business"
+
+ **Move the money around**
+
+      you allocate the money from one place to another, like investing in something else
+
+ **Along those lines**
+
+      "Things of this nature, things like that
+
+**point something out**
+
+      you mention it or bring it to the discussion
+
+      Well, he pointed this out when we were talking about Donald Trump being elected

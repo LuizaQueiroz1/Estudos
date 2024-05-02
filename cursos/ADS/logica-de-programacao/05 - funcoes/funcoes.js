@@ -86,18 +86,18 @@
 // console.log(`Somatórios: ${retornado}, ${retornado2} e ${retornado3}`)
 
 // console.log('\n\n\n')
- 
+
 // function valida_string(pergunta, max, min, len){
 //     s1 = prompt(pergunta)
 //     tam = len,(s1)
-      
+
 //     while (tam < min) or (tam > max);{
 //         s1 = prompt(pergunta)
 //         tam = len,(s1)
 //         return(s1)
 //     }
-    
-    
+
+
 // }
 // x = valida_string(`Digite uma string`, 10, 30)
 // console.log(`Você digitou a string: ${x}. \n Dado válido. Encerrando o programa...`)
@@ -107,7 +107,7 @@
 
 
 // while (true) {
-    
+
 //     try{
 //         x = parseInt(prompt("Por favor, digite um número:"))
 //         break
@@ -117,41 +117,172 @@
 //     } 
 
 // }
-        
-// Quando você passa uma array como parametro, se a função alterar algum valor da array, essa não constará dentro da função, mas sim fora
 
-function myFunc(theArr) {
-    theArr[0] = 30;
-  }
-  
-  const arr = [45];
-  
-  console.log(arr[0]); // 45
-  myFunc(arr);
-  console.log(arr[0]); // 30
-  
+// // Quando você passa uma array como parametro, se a função alterar algum valor da array, essa não constará dentro da função, mas sim fora
+
+// function myFunc(theArr) {
+//     theArr[0] = 30;
+//   }
+
+//   const arr = [45];
+
+//   console.log(arr[0]); // 45
+//   myFunc(arr);
+//   console.log(arr[0]); // 30
 
 
-  const factorial = function fac(n) {
-    return n < 2 ? 1 : n * fac(n - 1);
-  };
-  
-  console.log(factorial(3)); // 6
-  
-console.log("\n\n\n")
 
-  function map(f, a) {
-    const result = new Array(a.length);
-    for (let i = 0; i < a.length; i++) {
-      result[i] = f(a[i]);
-    }
-    return result;
-  }
+//   const factorial = function fac(n) {
+//     return n < 2 ? 1 : n * fac(n - 1);
+//   };
+
+//   console.log(factorial(3)); // 6
+
+// console.log("\n\n\n")
+
+//   function map(f, a) {
+//     const result = new Array(a.length);
+//     for (let i = 0; i < a.length; i++) {
+//       result[i] = f(a[i]);
+//     }
+//     return result;
+//   }
 
 //No código a seguir, a função recebe uma função definida por uma expressão de função e a executa para cada elemento do array recebido como segundo argumento:
-  const cube = function(x){
-      return x * x * x  
-  };
+// const cube = function(x){
+//     return array = x * x * x   
+// };
 
-  const array = [3, 5, 8, 9];
-  console.log(map(cube, array));
+// const array = [3, 5, 8, 9];
+// console.log((cube, array));
+
+function calcular_numero(numero1, numero2, operador) {
+  let operacao
+
+  if (operador === "+") {
+    operacao = numero1 + numero2
+
+  } else if (operador === "-") {
+    operacao = numero1 - numero2
+
+  } else if (operador === "*") {
+    operacao = numero1 * numero2
+
+  } else if (operador === "/") {
+    operacao = numero1 / numero2
+  }
+  //  console.log(operacao)
+  return operacao
+}
+const resultadoSoma = calcular_numero(4, 7, '+',);
+const resultadoDivisao = calcular_numero(4, 7, "/")
+const resultadoSubtracao = calcular_numero(10, 5, "-")
+const resultadoMulti = calcular_numero(5, 5, "*")
+
+console.log(resultadoSoma)
+console.log(resultadoDivisao)
+console.log(resultadoSubtracao)
+console.log(resultadoMulti)
+
+
+function mundo(){
+  console.log("Bom dia, mundo!")
+}
+mundo()
+
+function cubo(numero){
+ let calculoCubo
+ calculoCubo = numero * numero * numero
+ return calculoCubo
+}
+
+const resultadoCubo = cubo(3)
+console.log(resultadoCubo)
+
+
+
+function fahreinheitToCeusius(fahreiheit){
+  const celcius = (fahreiheit - 32) * (5 / 9)
+  return celcius
+}
+
+const resultadoConversao = fahreinheitToCeusius(64)
+console.log(resultadoConversao)
+
+
+function areaTriangulo( base, altura){
+  const area =  1/2 * base * altura
+  return area
+}
+
+const resultadoArea = areaTriangulo(8, 6)
+console.log(resultadoArea)
+
+// valor de Pi 3,14.... Pi descrito em fração22/7
+
+function calcAreadPerimetro(raio){
+  const PI = 22/7
+  const area = PI * raio * raio
+
+  const perimetro = PI * 2 * raio
+
+  console.log(area)
+  console.log(perimetro)
+} 
+
+const resultadoAreaPerimetro = calcAreadPerimetro(5)
+
+function inversaoValores(){
+
+}
+
+console.log(
+  "Subi no onibus".split('').reverse().join('')
+)
+
+console.log("\n\n\n\n\n\n\n\n")
+ function ehPalindromo(stringToVerify){
+  const stringToVerifyArray = stringToVerify.split('')
+  const tamanhoDoArray = stringToVerifyArray.length
+  const invertedStringArray = []
+  
+
+  for (let i = 0; i < tamanhoDoArray; i++){
+    console.log(i)
+    const valorAtualPorIndice = stringToVerifyArray[i]
+
+    invertedStringArray.unshift(valorAtualPorIndice)
+  }
+
+  const invertedString = invertedStringArray.join("")
+
+  const ePalindromo = stringToVerify === invertedString
+  return ePalindromo
+ }
+
+const palindromo = ehPalindromo('Ana') 
+console.log(palindromo)
+
+
+console.log("\n\n\n\n\n\n\nnumeros\n")
+
+function InversaoDeNumeros(InvertNumber){
+  const ToVerifyArray = InvertNumber.split('')
+  const invertedStringArrayNumber = []
+
+  for(let i = 0; i < ToVerifyArray.length; i++){
+    const valorAtualPorIndice =  ToVerifyArray[i]
+    invertedStringArrayNumber.unshift(valorAtualPorIndice)
+  }
+  const inverterNumber = invertedStringArrayNumber.join('')
+  return inverterNumber
+
+}
+
+const StringComnumero = "243";
+console.log(StringComnumero)
+const numbers = InversaoDeNumeros(StringComnumero)
+console.log(numbers)
+
+
+  

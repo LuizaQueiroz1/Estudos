@@ -1,9 +1,9 @@
 # Aula 5- Funcões
 
 ## Tema 1 - Funçoes
-Funções são techos(blocos) de códigos que só são executados quando chamados/invocados.
+Funções são trechos(blocos) de códigos que só são executados quando chamados/invocados.
 
-Não podemos depender de variaveis externas para o funcionamento da função, pois foge do padrão. Corremos o risco de apagar alguma variável que a função utilizasse. O melhor é passar tudo o que função tem que executar por parâmetro.
+Não podemos depender de variaveis externas para o funcionamento da função, pois foge do padrão. Corremos o risco de apagar alguma variável que a função utiliza. O melhor é passar tudo o que função tem que executar por parâmetro.
 
 São rotinas de códigos que podem ser executadas quando tem seu nome invocado dentro do programa.
 Funções que já utilizei sem saber que eram funções: console.log(), prompt(), parseInt()
@@ -94,7 +94,7 @@ Parâmetros opcionais: podemos dar flexibilidade as funções permitindo que nem
 Refere-se a visibilidade e acessibilidade em diferentes partes do programa
 
 Existem dois tipos de escopo: 
-- escopo local (Que só exite no contexto das funções definidas ou pré definidas alí dentro. Ela não existe fora do contexto da função. Criado sempre que uma função é chamada).
+- escopo local (Que só existe no contexto das funções definidas ou pré definidas alí dentro. Ela não existe fora do contexto da função. Criado sempre que uma função é chamada).
 - escopo global (É a variável principal do programa e a mesmo existe ao longo de todo o programa. Existe em todas as funções invocadas ao longo do programa)
 
 Um escopo é uma propriedade que determina onde a variável pode ser utilizada dentro do programa
