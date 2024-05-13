@@ -87,3 +87,5 @@ array.indexOf(elementoDePesquisa, [pontoInicial = 0])
 ## Trabalhando com metódos de strings
 - Uma string é imutável
 - Mas, com listas, podemos altera-la
+
+
