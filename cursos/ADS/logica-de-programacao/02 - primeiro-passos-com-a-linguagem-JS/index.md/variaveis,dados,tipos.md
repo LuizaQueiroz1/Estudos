@@ -238,6 +238,8 @@ console.log(Object.entries(objDois))
     const obj = Object.fromEntries(entries);
 
     console.log(obj); {foo: 'bar', baz: 42}
+```
+    
 
 ## Tema 4 - Manipulações avançadas com Strings
 Composições 

@@ -1,6 +1,6 @@
 let x = [3, 5, 7, 9, 12];
 let y = x;
-y [0] = 2
+y[0] = 2
 console.log(`X ${x}  É  Y ${y}`)
 
 console.log('\n\n\n')
@@ -31,15 +31,15 @@ console.log(mochila[0][4])
 
 
 const s1 = "Lógica de programação e Algoritmos"
-    s1.startsWith('Lógica')
-       if(s1 == 'Lógica'){
-        console.log(s1)
-       }
+s1.startsWith('Lógica')
+if (s1 == 'Lógica') {
+    console.log(s1)
+}
 
 let arr = ["Anderson", "Luiza", "Grimmjow"]
 
- arr.push("Hannah")
- console.log(arr)
+arr.push("Hannah")
+console.log(arr)
 
 // arr.pop()
 
@@ -175,7 +175,7 @@ function removendoDuplicadas(arr = []) {
         let isDuplicated = false
 
         for (let j = 0; j < arr.length; j++) {
-            if ( (i !== j) && (arr[i] === arr[j])) {
+            if ((i !== j) && (arr[i] === arr[j])) {
                 isDuplicated = true
             }
         }
@@ -186,9 +186,9 @@ function removendoDuplicadas(arr = []) {
     }
 
     for (let i = 0; i < arr.length; i++) {
-        const elemento =  arr[i]
+        const elemento = arr[i]
 
-        if(!arrayFiltrado.includes(elemento)){
+        if (!arrayFiltrado.includes(elemento)) {
             arrayFiltrado.push(elemento)
         }
     }
@@ -219,10 +219,150 @@ console.log(resultadoDuplicadas)
 
 console.log("\n\n\n\n")
 
-function concatenarArray(array1, array2){
+function concatenarArray(array1, array2) {
     const array3 = array1.concat(array2)
     return array3
 }
 
 const resultadoConcatenar = concatenarArray([0, 7, 0, 7], [2, 0, 0, 3])
 console.log(resultadoConcatenar)
+
+
+console.log("\n\n\n\n\n")
+
+
+let carros = ["BMW", "Auston Martim", "Ferrari", "Buggati"]
+
+console.log(carros)
+
+// modificar qualquer item de um array
+carros[1] = "Lamborghini"
+
+console.log(carros)
+
+let carrosUm = carros[2] //é como declacar uma string com o valor Ferrari
+
+console.log(carrosUm)
+
+
+console.log("\n\n\n\n\n")
+
+let dadosObjeto = {
+    nome: "lulu",
+    idade: 20,
+    endereco: "Rua Guarajuba"
+}
+
+for (dados in dadosObjeto) {
+    console.log('Chave: ' + dados + ', Valor: ' + dadosObjeto[dados])
+}
+
+
+console.log("\n\n\n\n\n")
+
+
+let dadoObjeto = ['luiza', 20, 'Rua Guarajuba', 'site'];
+
+for (dado in dadoObjeto) {
+    console.log('valor:' + dadoObjeto[dado])
+}
+
+
+console.log("\n\n\n\n")
+
+let dadoObject = ['luiza', 20, 'Rua Guarajuba', 'site'];
+
+for (dado of dadoObject) {
+    console.log(dado)
+}
+
+
+console.log("\n\n\n\n")
+
+let nomes = ['miciline', 'João', 'Maria']
+for (dedo in nomes) {
+    console.log(dedo)
+}
+
+let people = { nome: 'Anderson', idade: 21, profissao: 'Programador' }
+
+for (dadoz in people) {
+    console.log(dadoz)// retorna os valores(values)
+}
+
+console.log("\n\n\n\n")
+
+//mostrando os valores dos objetos 
+let bebida = {
+    a: 'Cevada',
+    b: 'Suco',
+    c: 'Café'
+}
+
+for (bebi in bebida) {
+    console.log(bebida[bebi])
+}
+
+
+console.log("\n\n\n\n")
+
+//mostrando os valores dos objetos no array
+console.log('EXEMPLO COM ARRAY')
+let bebidas = ['Cevada',
+    'Suco',
+    'Café']
+
+
+for (bebiz in bebida) {
+    console.log(bebida[bebiz])
+}
+
+console.log("\n\n\n\n")
+
+//verificando o tamanho do array
+let names = ['micilini', 'joão ', 'Maria']
+console.log(names.length)
+
+if (names.length > 0) {
+    console.log("O array está cheio")
+} else { console.log("O array está vazio") }
+
+
+
+console.log("\n\n\n\n")
+
+//unindo arrays
+let arr1 = ['a', 'b', 'c',]
+let arr2 = ['d', 'e', 'f']
+
+console.log(arr1.concat(arr2))
+
+
+const array1 = ['a', 'b', 'c', 'd']
+const array2 = array1.copyWithin(0,1)//mandando o elemendo do índice '1' para o '0' 
+console.log(array2)
+
+
+console.log("\n\n\n\n")
+
+//retornando um objeto com chave(key) e valor(value) de uma array.
+const arra1 = ['a', 'b', 'c']
+const iterador = arra1.entries();
+
+console.log(iterador.next().value) 
+console.log(iterador.next().value)
+console.log(iterador.next().value)
+
+
+console.log("\n\n\n\n")
+
+//verificação como o every
+function verificaIdade(valor){
+    return valor < 30
+}
+    const idades = [23, 25, 17, 28, 29,]
+    console.log(idades.every(verificaIdade))
+
+
+    let array = [1,2,3,4,]
+    console.log(array.fill(7,1))
