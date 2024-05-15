@@ -363,6 +363,71 @@ function verificaIdade(valor){
     const idades = [23, 25, 17, 28, 29,]
     console.log(idades.every(verificaIdade))
 
+let array = [1,2,3,4,]
+console.log(array.fill(7,1))
 
-    let array = [1,2,3,4,]
-    console.log(array.fill(7,1))
+function somenteNomesCom5Caracteres(valor){
+        return valor.length <= 0;
+    }
+
+    let nomez = ['micilini', 'lulu','edu']
+    const results = nomez.filter(somenteNomesCom5Caracteres);
+    console.log(results)    
+
+    function somenteNomesCom5Caracteres(valor){
+        return valor.length <= 0;
+        }
+        
+        const resultss = somenteNomesCom5Caracteres([ 'lulu', 'edu'])   
+        console.log(resultss)
+    
+        
+console.log("\n\n\n\n\n")
+
+function maiorQueDez(valor){
+    return valor > 10
+}    
+
+const resultadoz = [7, 5, 6, 10, 19, 20, 21, 30]
+console.log(resultadoz.find(maiorQueDez))
+
+
+console.log("\n\n\n\n\n")
+
+function maiorQueDez(valor){
+    return valor > 10
+}
+
+
+const resul = [5, 9, 10, 7, 12, 50]
+console.log(resul.findLast(maiorQueDez))
+
+
+
+let arry = [2,3,5,[8,10,13], [16,18]]
+    console.log(arry.flat())
+
+
+
+     let arryy = [2,3,5,[8,10,13,[2,3,4]], [16,18]]
+    console.log(arryy.flat(2))
+
+
+function verificaSeNumeroDois(valor){
+        if(valor === 2){
+            return [9,9]
+        } else{
+            return 0 
+        }
+    }
+
+   let array11 = [3,4,5,2,7,8,2]
+   let resultadoss = array11.flatMap(verificaSeNumeroDois)
+   
+   console.log(resultadoss)//[0,0,0,9,9,0,0,9,9]
+
+
+   let arr111 = ['lulu', 20]
+
+    arr111.forEach(function(valor,chave){console.log('Chave: ' + chave + ', Valor: ' + valor)})
+

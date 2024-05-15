@@ -397,5 +397,130 @@ let array = [1,2,3,4,]
 ```
 
 - filter(): o metódo filter retorna um filtro a partir da função que você criou, de modo a retornar somente os elementos que retornarem true.
+```js
+    function somenteNomesCom5Caracteres(valor){
+        return valor.length <= 0;
+    }
 
-    
+    let nomes = ['Micilini', 'Gabriele', 'Matheus', 'Edu', 'José']
+    const resultado = nomes.filter(somenteNomesCom5Caracteres);
+    console.log(resultado)//resultado: ['edu, josé']
+```
+
+
+- find(): o metódo find retorna o primeiro elemento que retorna true através de uma função que você criou. 
+```js
+    function maiorQueDez(valor){
+        return valor > 10
+    }    
+
+    const resultado = menorQueDez([7, 5, 6, 10, 20, 21, 30])
+    console.log(resultado.find())//20
+    //mesmo que haja numeros maiores que 20, eles não são retonados, pois retorna somente o primeiro que for verdadeiro.
+```
+
+findeIndex(): retorna o indice do primeiro true que resultar da função.
+```js
+    function menorQueDez(valor){
+        return valor < 10
+    }
+
+    const resul = menorQueDez([5, 9, 10, 7, 12])//12
+    console.log(resul.findIndex())
+```
+
+- findLast() - encontra o valor do último elemento que retornar true através de uma função.
+```js
+    function menorQueDez(valor){
+        return valor < 10
+    }
+
+    const resul = menorQueDez([5, 9, 10, 7, 1, 12, 3, 50])
+    console.log(resul.findLast())//50
+```
+
+- findLastIndex: retorna o índice do último elemento que retorna true através de uma função
+```js
+    function maiorQueDez(valor){
+       return valor > 10;
+    }
+
+    let array1 = [1, 7, 9, 33, 10, 45];
+
+   const resultado = array1.findLastIndex(maiorQueDez);
+
+   console.log(resultado);//5, pois o 45 está localizado no índice 5
+```
+
+- flat(): o metódo flat pega todos os possíveis elementos aninhados dentro de um array e os desaninha
+```js
+    let arr = [2,3,5[8,10,13], [16,18]]
+    console.log(arr.flat())
+```
+Quando o flat é usado sem argumento, o JS entende que só queremos desaninhar somente o primeiro aninhamento que ele encontrar. Então, se tivermos aninhamentos dentro de aninhamentos, devemos passar o argumento(número) para que o JS faça o "desaninhamento" de forma mais profunda.
+```js
+     let arr = [2,3,5,[8,10,13,[2,3,4]], [16,18]]
+    console.log(arr.flat(2))
+```
+
+- flatMap: o metódo flatMap retornará outro array a partir de um array existente. Aqui ele chama uma função que eu mesmo criarei:
+```js
+    function verificaSeNumeroDois(valor){
+        if(valor === 2){
+            return [9,9]
+        } else{
+            return 0 
+        }
+    }
+
+   let array11 = [3,4,5,2,7,8,2]
+   let resultado = array11.flatMap(verificaSeNumeroDois)
+   
+   console.log(resultado)//[0,0,0,9,9,0,0,9,9]
+```
+
+- forEach: o metódo executa uma função que você criou de modo a enviar cada elemento de um array de forma separada. Esse metódo é muito mais usado e trabalha de forma semelhante ao for, for...in, for...of e while.
+```js
+    function mostraValor(valor){
+        console.log(valor)
+    }
+
+    let arr111 = ['lulu', 20]
+
+    arr111.forEach(mostaValor)
+```
+Podemos difinir um outro argumento na função para achar a chave dos elemento também    
+```js
+        function mostraValor(valor, chave){
+        console.log('Chave' + valor + , 'valor' + valor)
+    }
+
+    let arr111 = ['lulu', 20]
+
+    arr111.forEach(mostaValor)
+```
+É mais comum ver funções declaradas dentro do forEach:
+```js
+    let arr111 = ['lulu', 20]
+
+    arr111.forEach(function(valor,chave){console.log('Chave ' + valor + , 'valor ' + valor)})
+ ```
+Outra forma de fazer:
+```js
+    let arr111 = ['lulu', 20]
+
+    arr111.forEach(function(valor,chave) => console.log('Chave ' + valor + , 'valor ' + valor))
+```
+
+
+- form(): o metódo form, inicialmente, ele pode criar um novo array a partir de uma string
+```js
+    consolo.log(array.form('micilini'))//["M", "i", "c", "i", "l", "i", "n", "i"]
+```
+Ou ele pode criar através de outra array onde este obedece a uma determinada função que devo criar 
+```js
+    function soma(valor){
+        return valor * valor // retorna a multiplicação de  cada elemento do array consigo mesmo. 
+    }
+
+    console.log(arra.form([1,2,3], soma))//[1, 2, 9]

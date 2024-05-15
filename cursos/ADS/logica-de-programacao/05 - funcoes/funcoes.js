@@ -553,8 +553,42 @@ function quadradoPerfeito(n){
     return ehQuadradoPerfeito
 }
 
-const resultadoQuadradoPerfeito = quadradoPerfeito(9)
+const resultadoQuadradoPerfeito = quadradoPerfeito(36)
 console.log(resultadoQuadradoPerfeito)
 
 
 // se a a raiz do número for um resultado exato, printar na tela
+
+
+
+function somenteNomesCom5Caracteres(valor){
+  return valor.length <= 0;
+  }
+  
+  let nomes = ['Micilini', 'Gabriele', 'Matheus', 'Edu', 'José'];
+  
+  const resultados = nomes.filter(somenteNomesCom5Caracteres);
+  
+  console.log(resultados)
+
+
+function veridicaSeEhPrimo(valor){
+    
+
+      if(valor <= 1){
+      return false
+      }    
+
+    for(let j = 2; j <= Math.sqrt(valor); j++){
+      if(valor % j === 0){
+        return  false
+      }
+    }
+
+    
+    return true
+
+}
+
+const resultadoEhPrimo = veridicaSeEhPrimo(0)
+console.log(resultadoEhPrimo)
