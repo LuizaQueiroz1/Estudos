@@ -524,3 +524,19 @@ Ou ele pode criar através de outra array onde este obedece a uma determinada fu
     }
 
     console.log(arra.form([1,2,3], soma))//[1, 2, 9]
+```
+
+- includes(): verifica se um determinado elemento existe dentro so array, retornando true se positivo e false se negativo:
+```js
+    function existenciaDeNumero(valor){
+  let arrayVazia = []
+
+  valor.includes(2)
+
+  return valor.includes(2)
+
+}
+
+const resultadoExistencia = existenciaDeNumero([3,4,5,6])//false
+console.log(resultadoExistencia)
+

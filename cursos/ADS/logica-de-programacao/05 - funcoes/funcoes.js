@@ -201,13 +201,9 @@ function cubo(numero) {
 
 
 
-function fahreinheitToCeusius(fahreiheit) {
-  const celcius = (fahreiheit - 32) * (5 / 9)
-  return celcius
-}
 
-// const resultadoConversao = fahreinheitToCeusius(64)
-// console.log(resultadoConversao)
+
+
 
 
 function areaTriangulo(base, altura) {
@@ -336,29 +332,29 @@ function verificandoNumeroPrimo(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     const num = parseInt(arr[i])
-    if(num <= 1){
+    if (num <= 1) {
       continue
     }
 
     let isPrimo = true;
 
-    for(let divisor = 2; divisor <= Math.sqrt(num); divisor++){
-      if(num % divisor === 0){
-      isPrimo = false;
-      break;
+    for (let divisor = 2; divisor <= Math.sqrt(num); divisor++) {
+      if (num % divisor === 0) {
+        isPrimo = false;
+        break;
       }
     }
 
-    if(isPrimo){
+    if (isPrimo) {
       primosEncontrados.push(num)
     }
   }
   return primosEncontrados.join(",")
-}  
- 
+}
 
 
-const resultadoNumerosPrimos = verificandoNumeroPrimo([1,3,4,2,5,7,11,13,18,17])
+
+const resultadoNumerosPrimos = verificandoNumeroPrimo([1, 3, 4, 2, 5, 7, 11, 13, 18, 17])
 console.log(resultadoNumerosPrimos)
 console.log("Esses são números primos")
 
@@ -374,82 +370,82 @@ function contagemCaractere(arr, carac) {
     if (arr[i] == carac) {
       array.push(arr[i])
     }
-  } 
-    for(let j = 0; j < array.length; j++){
+  }
+  for (let j = 0; j < array.length; j++) {
     return array
   }
   return array
 
 }
 
-const resultadoContagemCaractere = contagemCaractere([3,3,3,3,4,5,5,], [5])
+const resultadoContagemCaractere = contagemCaractere([3, 3, 3, 3, 4, 5, 5,], [5])
 console.log(resultadoContagemCaractere)
 
 
 console.log("\n\n\n\n")
 
 
- const boasVindas = function(nome){
+const boasVindas = function (nome) {
   console.log(`Seja bem vindo(a), ${nome}`)
- }
+}
 
- boasVindas('Luiza')
-
-
-
- console.log("\n\n\n\n\n")
-
-
- const mediaAritmetica = function(arr){
-  let soma = 0
-
-  for(let i = 0; i < arr.length; i++){
-    soma += arr[i]
-  }
-    
-   const resultado = soma / arr.length
-    return resultado
- }
- const resultadoMediaAritmetica = mediaAritmetica([2,5,6,8,9,])
- console.log(resultadoMediaAritmetica);
-
-
-
- console.log("\n\n\n\n");
-
-
- const caixaAlta = function(string){
-    console.log("Deixando palavras em caixa alta")
- const resultado = string.toUpperCase()
- return resultado
- }
-
- const resultado = caixaAlta('luiza Larissa')
- console.log(resultado)
+boasVindas('Luiza')
 
 
 
 console.log("\n\n\n\n\n")
 
 
- const invertendoArray = function(arr){
+const mediaAritmetica = function (arr) {
+  let soma = 0
+
+  for (let i = 0; i < arr.length; i++) {
+    soma += arr[i]
+  }
+
+  const resultado = soma / arr.length
+  return resultado
+}
+const resultadoMediaAritmetica = mediaAritmetica([2, 5, 6, 8, 9,])
+console.log(resultadoMediaAritmetica);
+
+
+
+console.log("\n\n\n\n");
+
+
+const caixaAlta = function (string) {
+  console.log("Deixando palavras em caixa alta")
+  const resultado = string.toUpperCase()
+  return resultado
+}
+
+const resultado = caixaAlta('luiza Larissa')
+console.log(resultado)
+
+
+
+console.log("\n\n\n\n\n")
+
+
+const invertendoArray = function (arr) {
   let arrayVazia = []
 
-    for(let i = 0; i < arr.length; i++){
-      arrayVazia.unshift(arr[i])
-      console.log("Invertendo array")
-    }
- return arrayVazia
+  for (let i = 0; i < arr.length; i++) {
+    arrayVazia.unshift(arr[i])
+    console.log("Invertendo array")
   }
- const resultadoInvertendoArray = invertendoArray([3,6,7])
- console.log(resultadoInvertendoArray)
+  return arrayVazia
+}
+const resultadoInvertendoArray = invertendoArray([3, 6, 7])
+console.log(resultadoInvertendoArray)
 
 
 
- console.log("\n\n\n\n\n")
+console.log("\n\n\n\n\n")
 
 
- console.log("luiza".split('').reverse().join(''))
+console.log("luiza".split('').reverse().join(''))
 
 //  "Subi no onibus".split('').reverse().join('')
 
@@ -458,10 +454,10 @@ console.log("\n\n\n\n\n")
 console.log("\n\n\n\n\n")
 
 
-const porcentagem = function(valor, porcentagem){
-  console.log('calculando a porcentagem de valor') 
+const porcentagem = function (valor, porcentagem) {
+  console.log('calculando a porcentagem de valor')
   return (valor * porcentagem) / 100
-    
+
 }
 
 
@@ -472,42 +468,42 @@ console.log(resultadoPorcentagem)
 console.log("\n\n\n\n\n")
 
 
-const somaDePares = function(arr){
-  let soma = 0 
+const somaDePares = function (arr) {
+  let soma = 0
   let currentArray = []
   const divisor = 2
 
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] % divisor == 0){
-      
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % divisor == 0) {
+
       soma += arr[i]
-      console.log("Soma dos números pares")      
+      console.log("Soma dos números pares")
       currentArray = soma
-      
+
     }
-  } 
+  }
   return currentArray
 }
 
-const resultSomaPares = somaDePares([2,8,4,6,3,7])
+const resultSomaPares = somaDePares([2, 8, 4, 6, 3, 7])
 console.log(resultSomaPares)
 
 
 console.log("\n\n\n\n")
 
 
-function convertBinary(n){
+function convertBinary(n) {
   let num = n;
   let binary = (num % 2).toString()
 
-  while(num > 1){
+  while (num > 1) {
     num = parseInt(num / 2)
     binary = (num % 2) + binary
   }
   return binary
 }
 
-const resultadoBinary = convertBinary(70)
+const resultadoBinary = convertBinary(25)
 console.log(resultadoBinary)
 
 
@@ -518,10 +514,10 @@ console.log("\n\n\n\n")
 
 
 function fatorial(n) {
-   
-  let resultadoFatorial = n 
-  for(let i = n - 1; i > 0; i--){
-     resultadoFatorial = resultadoFatorial * i
+
+  let resultadoFatorial = n
+  for (let i = n - 1; i > 0; i--) {
+    resultadoFatorial = resultadoFatorial * i
   }
 
   return resultadoFatorial
@@ -540,9 +536,9 @@ console.log("\n\n\n\n")
 console.log("\n\n\n\n\n")
 
 
-function quadradoPerfeito(n){
+function quadradoPerfeito(n) {
 
-  let raiz = Math.sqrt(n)  
+  let raiz = Math.sqrt(n)
   // let raizEmString = "" + raiz
   let raizEmString = `${raiz}`
 
@@ -550,7 +546,7 @@ function quadradoPerfeito(n){
   const ehQuadradoPerfeito = !raizEmString.includes(".")
 
 
-    return ehQuadradoPerfeito
+  return ehQuadradoPerfeito
 }
 
 const resultadoQuadradoPerfeito = quadradoPerfeito(36)
@@ -561,34 +557,167 @@ console.log(resultadoQuadradoPerfeito)
 
 
 
-function somenteNomesCom5Caracteres(valor){
+function somenteNomesCom5Caracteres(valor) {
   return valor.length <= 0;
+}
+
+let nomes = ['Micilini', 'Gabriele', 'Matheus', 'Edu', 'José'];
+
+const resultados = nomes.filter(somenteNomesCom5Caracteres);
+
+console.log(resultados)
+
+
+function veridicaSeEhPrimo(valor) {
+
+
+  if (valor <= 1) {
+    return false
   }
-  
-  let nomes = ['Micilini', 'Gabriele', 'Matheus', 'Edu', 'José'];
-  
-  const resultados = nomes.filter(somenteNomesCom5Caracteres);
-  
-  console.log(resultados)
 
-
-function veridicaSeEhPrimo(valor){
-    
-
-      if(valor <= 1){
+  for (let j = 2; j <= Math.sqrt(valor); j++) {
+    if (valor % j === 0) {
       return false
-      }    
-
-    for(let j = 2; j <= Math.sqrt(valor); j++){
-      if(valor % j === 0){
-        return  false
-      }
     }
+  }
 
-    
-    return true
+
+  return true
 
 }
 
 const resultadoEhPrimo = veridicaSeEhPrimo(0)
 console.log(resultadoEhPrimo)
+
+
+console.log("\n\n\n\n\n")
+
+
+function existenciaDeNumero(valor) {
+
+  return valor.includes(2)
+
+}
+
+const resultadoExistencia = existenciaDeNumero([3, 4, 5, 6])
+console.log(resultadoExistencia)
+
+
+console.log("\n\n\n\n\n")
+
+const binaryToDecimal = function (n) {
+  let resultado = 0
+  const potencia = 2
+
+  for (let i = 0; i < n.length; i++) {
+    const resultadoMath = potencia ** i * parseInt(n[n.length - 1 - i]);
+    resultado += resultadoMath;
+  }
+
+  return resultado
+
+}
+const resultadoDecimal = binaryToDecimal("111111")
+console.log(resultadoDecimal)
+
+
+console.log("\n\n\n\n\n")
+
+
+
+// percorri os número menores que o fornecido e fiz a adição do número ímpares
+const somaImpares = function (numero) {
+  let resultado = 0;
+
+  //percorre todos os números menores que o fornecido
+  for (let i = 1; i < numero; i++) {
+
+    //verifica se o número é ímpar
+    if (i % 2 === 1) {
+      resultado += i  //adiciona o número ímpar a soma
+    }
+
+  }
+  return resultado
+}
+
+const numeroFornecido = 11;
+
+const resultadoSomaDosImpares = somaImpares(numeroFornecido)
+console.log(resultadoSomaDosImpares)
+
+
+console.log("\n\n\n\n\n")
+
+let celcius = 0
+let fahreinheit = 0
+
+
+function escolhaDeConversão() {
+  console.log("Escolha uma opção")
+  let menu = console.log("Opcao 1: Celcius para fareinheit",
+    "opcao 2: Farenheit para celcius"
+  )
+      let repetir = true
+
+  const opcao1 = 1
+  const opcao2 = 2
+  const opcao3 = 3
+
+    while(repetir === true){
+      repetir = false
+      let escolha = prompt("Escolha a opção 1, 2 ou 3")
+
+        if(escolha == opcao1){
+          console.log(`Sua escolha foi fahreinheit`)
+          return ceusiusToFahreiheit(fahreinheit)
+
+        }  else if(escolha == opcao2){
+          console.log(`Sua escolha foi celsius `)
+          return fahreinheitToCeusius(celcius)
+
+        }  else if(escolha == opcao3){
+         
+          return menu
+        }  
+        repetir = true
+    }
+}
+const resultadoEscolhaDeConversão = escolhaDeConversão()
+
+
+
+
+console.log("\n\n\n\n\n")
+
+
+
+
+console.log("AQUI")
+function ceusiusToFahreiheit(celcius) {
+
+  celcius = prompt("Escolha uma temperatura") 
+  const fahreiheit = (celcius * 1.8) + 32
+  return fahreiheit
+}
+const ceusiusParaFahreiheit = ceusiusToFahreiheit()
+console.log(ceusiusParaFahreiheit)
+
+
+
+console.log("\n\n\n")
+
+
+function fahreinheitToCeusius(fahreinheit) {
+   
+  fahreinheit = prompt("Escolha uma temeperatura C")   
+  const celcius = (fahreinheit - 32) * (5 / 9)
+  return celcius
+}
+
+ const resultadoFahreiheit = fahreinheitToCeusius().toFixed(2)
+ console.log(resultadoFahreiheit)
+
+
+
+
