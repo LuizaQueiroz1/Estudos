@@ -513,19 +513,18 @@
 
 
 
-// function fatorial(n) {
+function fatorial(n) {
 
-//   let resultadoFatorial = n
-//   for (let i = n - 1; i > 0; i--) {
-//     resultadoFatorial = resultadoFatorial * i
-//   }
+  let resultadoFatorial = n 
+  for (let i = n - 1; i > 0; i--) {
+    resultadoFatorial = resultadoFatorial * i
+  }
 
-//   return resultadoFatorial
+  return resultadoFatorial
+ }
 
-// }
-
-// const resultadoFatorial = fatorial(5)
-// console.log(resultadoFatorial)
+const resultadoFatorial = fatorial(5)
+console.log(resultadoFatorial)
 
 
 
