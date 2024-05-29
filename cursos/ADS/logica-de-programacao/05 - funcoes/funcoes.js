@@ -515,13 +515,13 @@
 
 function fatorial(n) {
 
-  let resultadoFatorial = n 
+  let resultadoFatorial = n
   for (let i = n - 1; i > 0; i--) {
     resultadoFatorial = resultadoFatorial * i
   }
 
   return resultadoFatorial
- }
+}
 
 const resultadoFatorial = fatorial(5)
 console.log(resultadoFatorial)
@@ -651,83 +651,99 @@ console.log(resultadoFatorial)
 let celcius = 0
 let fahreinheit = 0
 
+// execução da função
 
-function escolhaDeConversao() {
-  console.log("Escolha uma opção")
-  let menu = console.log("Opcao 1: Celcius para fareinheit",
-    "opcao 2: Farenheit para celcius"
-  )
-  let repetir = true
+// const escolha = escolhaDeConversao()
+// console.log(escolha)
 
-  const opcao1 = 1
-  const opcao2 = 2
-  const opcao3 = 3
+// const resultadoMedia = mediaDosNumerosSomados(resultadoSoma, arrayDeNumeros).toFixed(2)
+// console.log(resultadoMedia)
 
-  while (repetir === true) {
-    repetir = false
-    let escolha = prompt("Escolha a opção 1(Celsius para Farenheit), 2(Farenheint para celsius) ou 3(Voltar para o menu)")
-
-    if (escolha == opcao1) {
-
-      console.log(`Sua escolha foi fahreinheit`)
-      fahreinheit = ceusiusToFahreiheit()
-      console.log(fahreinheit)
-
-    } else if (escolha == opcao2) {
-
-      console.log(`Sua escolha foi celsius `)
-      celcius = fahreinheitToCeusius().toFixed(2)
-      console.log(celcius)
-
-    } else if (escolha == opcao3) {
-      return escolha
-    }
-    repetir = true
-  }
-}
-//  escolhaDeConversao()
+// const resultadoFahreiheit = fahreinheitToCeusius().toFixed(2)
+// console.log(resultadoFahreiheit)
 
 
 
-console.log("\n\n\n\n\n")
+// function escolhaDeConversao() {
+//   console.log("Escolha uma opção")
+//   let menu = console.log("Opcao 1: Celcius para fareinheit",
+//     "opcao 2: Farenheit para celcius"
+//   )
+//   let repetir = true
 
+//   const opcao1 = 1
+//   const opcao2 = 2
+//   const opcao3 = 3
 
+//   while (repetir) {
 
+//     let escolha = prompt("Escolha a opção 1(Celsius para Farenheit), 2(Farenheint para celsius) ou 3(Voltar para o menu)")
 
-function ceusiusToFahreiheit(celcius) {
+//     if (escolha === opcao1) {
 
-  celcius = prompt("Escolha uma temperatura")
-  const fahreiheit = (celcius * 1.8) + 32
-  return fahreiheit
-}
-//  ceusiusToFahreiheit()
+//       console.log(`Sua escolha foi fahreinheit`)
+//       fahreinheit = ceusiusToFahreiheit()
+//       console.log(fahreinheit)
 
+//     } else if (escolha === opcao2) {
 
+//       console.log(`Sua escolha foi celsius `)
+//       celcius = fahreinheitToCeusius().toFixed(2)
+//       console.log(celcius)
 
-function fahreinheitToCeusius(fahreinheit) {
+//     } else if (escolha === opcao3) {
+//       repetir = true
+//     } else {
+//       console.log("opção errada")
+//     }
+//     repetir = true
+//   }
 
-  fahreinheit = prompt("Escolha uma temeperatura C")
-  const celcius = (fahreinheit - 32) * (5 / 9)
-  return celcius
-}
-
-//  const resultadoFahreiheit = fahreinheitToCeusius().toFixed(2)
-//  console.log(resultadoFahreiheit)
+// }
 
 
 
 
+// console.log("\n\n\n\n\n")
 
 
-// Execução das Funções
-const arrayDeNumeros = [15, 2, 30]
-const resultadoSoma = somaValoresDeUmArray(arrayDeNumeros)
-console.log(resultadoSoma)
 
-console.log("\n\n")
 
-const resultadoMedia = mediaDosNumerosSomados(resultadoSoma, arrayDeNumeros).toFixed(2)
-console.log(resultadoMedia)
+// function ceusiusToFahreiheit(celcius) {
+
+//   celcius = prompt("Escolha uma temperatura")
+//   const fahreiheit = (celcius * 1.8) + 32
+//   return fahreiheit
+// }
+// const resultadoCelsius = ceusiusToFahreiheit()
+// console.log(resultadoCelsius)
+
+
+// console.log("\n\n\n\n\n")
+
+
+// function fahreinheitToCeusius(fahreinheit) {
+
+//   fahreinheit = prompt("Escolha uma temeperatura C")
+//   const celcius = (fahreinheit - 32) * (5 / 9)
+//   return celcius
+// }
+
+
+
+
+// console.log("\n\n\n\n\n")
+
+
+
+// // Execução das Funções
+// const arrayDeNumeros = [15, 2, 30]
+// const resultadoSoma = somaValoresDeUmArray(arrayDeNumeros)
+// console.log(resultadoSoma)
+
+// console.log("\n\n")
+
+
 
 
 // Funções 
@@ -761,22 +777,22 @@ console.log("\n\n\n\n")
 
 
 
-function maiorNumero(array){
+function maiorNumero(array) {
   let maior = 0
-  
-    for(let i = 0; i < array.length; i++){
-      if(array[i] > maior){
-        maior = array[i]
-      }
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > maior) {
+      maior = array[i]
     }
+  }
 
-    return maior
+  return maior
 
 
-    
+
 }
 
-const numeroMenor = [30,20,10]
+const numeroMenor = [30, 20, 10]
 const resultMaiorNumero = maiorNumero(numeroMenor)
 console.log(resultMaiorNumero)
 
@@ -785,19 +801,102 @@ const resultMenorNumero = menorNumero();
 console.log(resultMenorNumero)
 
 
-function menorNumero(){
+function menorNumero() {
   let menor = numeroMenor[0]
 
-  if(numeroMenor === 0){
+  if (numeroMenor === 0) {
     return undefined
   }
 
-      for(let j = 1; j < numeroMenor.length ; j++){
-        if(numeroMenor[j] < menor){
-          menor = numeroMenor[j]
-        }
-      }
+  for (let j = 1; j < numeroMenor.length; j++) {
+    if (numeroMenor[j] < menor) {
+      menor = numeroMenor[j]
+    }
+  }
 
-      return menor
+  return menor
 }
+
+console.log("\n\n\n\n")
+
+
+function valorMaximo() {
+  let idades = [40, 50, 20]
+  let total = 0
+  for (idadeeee in idades) {
+    total = total + idades[idadeeee]
+
+  }
+  return total
+}
+
+const valorMaximun = valorMaximo()
+console.log(valorMaximun)
+
+
+// como o mercado é dividido. Quais os termos em que o mercado é dividido. O que é o backend, o frontend. termeos tecnicos da programaçã e do mercado de trabalho.
+//organizar o horário
+
+console.log("\n\n\n\n")
+
+function factororial(n) {
+
+  let resultado = 1
+
+
+  if (n > 0) {
+    for (let i = 1; i <= n; i++) {
+      resultado = resultado * i
+    }
+  } else {
+    resultado = 0
+    console.log("digite um numero inteiro")
+  }
+  return resultado
+}
+
+const factorialll = parseInt(factororial(-5))
+console.log(factorialll)
+
+
+console.log("\n\n\n\n")
+
+//Os dados de entrada necessarios são o numero aleatório(de 1 a 10) que o programa vai gerar e o chute que o usuário tem que dar
+
+//Devo camparar os dois dados e dizer se se o numero chutado pelo usuário está abaixo do numero gerado pelo programa, acima ou se é igual.
+
+//As restrições desse programa são: o valor tem que ser de 1 a 10
+
+//resultado esperado: izer se se o numero chutado pelo usuário está abaixo do numero gerado pelo programa, acima ou se é igual.
+
+function chuteDeNumero() {
+
+
+  let repetir = true
+
+  let n = parseInt(prompt("chute um numero"))
+  const numeroAleatorio = 5
+  let tentativas = 0
+
+  while (n !== numeroAleatorio) {
+
+    if (n < numeroAleatorio) {
+      console.log("Ops, chutou baixo")
+    } else if (n > numeroAleatorio) {
+      console.log("Ops, chutou alto")
+    } 
+  
+    n = parseInt(prompt("Tente novamente:"));
+    tentativas++;
+    
+  }
+
+  console.log(`PARABÉNS, VOCÊ ACERTOU O numero aleatório ${numeroAleatorio} em ${tentativas} tentativas`)
+
+
+}
+
+const resultCHuteNumero = chuteDeNumero()
+console.log(resultCHuteNumero)
+
 
