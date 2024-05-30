@@ -872,31 +872,117 @@ console.log("\n\n\n\n")
 function chuteDeNumero() {
 
 
-  let repetir = true
 
-  let n = parseInt(prompt("chute um numero"))
-  const numeroAleatorio = 5
-  let tentativas = 0
 
-  while (n !== numeroAleatorio) {
+
+  const numeroAleatorio = 6
+  // let tentativas = 0
+  let acertou = false
+
+  while (acertou == false) {
+    let n = parseInt(prompt("chute um numero"))
 
     if (n < numeroAleatorio) {
       console.log("Ops, chutou baixo")
     } else if (n > numeroAleatorio) {
       console.log("Ops, chutou alto")
-    } 
-  
-    n = parseInt(prompt("Tente novamente:"));
-    tentativas++;
-    
+    } else if (n === numeroAleatorio) {
+      acertou = true
+
+      console.log(`PARABÉNS, VOCÊ ACERTOU O numero aleatório ${numeroAleatorio}.`)
+    }
+
   }
 
-  console.log(`PARABÉNS, VOCÊ ACERTOU O numero aleatório ${numeroAleatorio} em ${tentativas} tentativas`)
 
 
 }
 
-const resultCHuteNumero = chuteDeNumero()
-console.log(resultCHuteNumero)
+// const resultChuteNumero = chuteDeNumero()
+// console.log(resultChuteNumero)
+
+
+console.log("\n\n\n\n")
+
+
+function velocidadePermitida() {
+  let velocidade = parseInt(prompt("Digite sua velocidade"))
+  const velocidadeMaxima = 80
+  let repetir = false
+
+  if (velocidade <= velocidadeMaxima) {
+    console.log("Não levou multa")
+  } else if (velocidade > velocidadeMaxima && velocidade <= velocidadeMaxima + 10) {
+    console.log("Levou multa leve")
+  } else if (velocidade >= velocidadeMaxima + 11 && velocidade <= velocidadeMaxima + 20) {
+    console.log("Levou multa grave")
+  } else if (velocidade > velocidadeMaxima + 20) {
+    console.log("Levou multa gravissíma")
+  }
+
+}
+
+// const ResultadoVelocidade = velocidadePermitida()
+// console.log(ResultadoVelocidade)
+
+
+
+
+
+//passos para resolver o algoritmo:
+
+// 1. prompt da velocidade do usuário
+// 2. armazenar velocidade
+// 3. comparar a velocidade permitida com a velocidade fornecida pelo usuário
+// 4. se estiver abaixo da velocidade permitida, exibir "Não levou multa"
+// 5 se estiver 10km acima da velocidade permitida, exibir "Levou multa leve"
+//6. se estiver de 11 a 20km acima da velocidade permitid, exibir "Levou multa grave"
+//7. se estiver acima de 20km, exibir "levou multa gravissima"
+
+
+
+
+// Metódo 5Qs:
+// Quais são os dados necessários?
+// Os primeiros números da sequência FIbonacci
+
+// Oque devo fazer com esses dados?
+// somar cada número ao anterior
+
+// Há alguma restrição?
+
+
+// resultado esperado
+//gerar os primeiros números primos
+
+// quais os passos lógicos para resolver esse algoritmo
+// 1. criar um array com números de 0 a 10
+// 2. fazer um laço de repetição com o for() para que o contador itere sobre o array
+// 3. somar cada número aos doi numeros anteriores 
+// retornar cada soma.
+
+
+
+function sequenciaDeFibonacci() {
+  const n = 10
+  let penultimo = 0
+  let ultimo = 1
+
+
+
+  for (let i = 0; i < n; i++) {
+    let proximo = penultimo + ultimo;
+    penultimo = ultimo;
+    ultimo = proximo;
+
+    console.log(proximo)
+  }
+
+  return ultimo
+
+}
+
+const reusltadoFibonacci = sequenciaDeFibonacci()
+console.log(reusltadoFibonacci)
 
 
