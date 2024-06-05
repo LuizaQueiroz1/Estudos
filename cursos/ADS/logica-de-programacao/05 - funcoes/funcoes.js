@@ -512,7 +512,7 @@
 
 
 
-
+console.log("FATORIAL AQUI")
 function fatorial(n) {
 
   let resultadoFatorial = n
@@ -979,10 +979,159 @@ function sequenciaDeFibonacci() {
   }
 
   return ultimo
-
+  split()
 }
 
 const reusltadoFibonacci = sequenciaDeFibonacci()
 console.log(reusltadoFibonacci)
 
 
+
+console.log("\n\n\n\n")
+
+function criteriosDeSenha(arr) {
+  let resultado = []
+
+
+
+  if (arr.length > 8) {
+    let hasUpperCase = false;
+    let hasLowerCase = false;
+    let hasATsimbol = false;
+
+
+    for (let i = 0; i < arr.length; i++) {
+      const char = arr[i];
+
+      if (char === "@") {
+        hasATsimbol = true
+      } else if (char === char.toUpperCase()) {
+        hasUpperCase = true
+      } else if (char === char.toLowerCase()) {
+        hasLowerCase = true
+      }
+    }
+    if (hasLowerCase && hasUpperCase && hasATsimbol) {
+      resultado.push(arr);
+    }
+  }
+
+  return resultado;
+}
+
+// const resultSenha = criteriosDeSenha(["Larysmith@"])
+// console.log(resultSenha)
+function criteriosDeSenha(password) {
+  let resultado = []
+  const numMaximo = 8
+
+  if (password.length >= numMaximo) {
+    let hasUpperCase = false;
+    let hasLowerCase = false;
+    let hasATsimbol = false;
+
+    for (let i = 0; i < password.length; i++) {
+      let char = password[i];
+
+      if (char === "!" || char === "@" || char === "#") {
+        hasATsimbol = true;
+      } else if (char === char.toUpperCase()) {
+        hasUpperCase = true;
+      } else if (char === char.toLowerCase()) {
+        hasLowerCase = true;
+      }
+
+
+    }
+
+    if (hasLowerCase === true && hasUpperCase === true && hasATsimbol === true) {
+      resultado.push(password);
+    } else {
+      console.log("Formato de senha incorreto. Sua senha deve conter ao menos 1 letra maiulcula, 1 minuscula e um caractere")
+    }
+
+
+  }
+
+  return resultado;
+}
+const resultSenha = criteriosDeSenha("Lary@smi#th!");
+console.log(resultSenha);
+
+
+
+console.log("\n\n\n\n")
+
+
+function primosMenoresOuIguais(n) {
+  const ehPrimo = new Array(n + 1).fill(true);
+
+  if (n <= 1) {
+    return false
+  }
+
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (ehPrimo) {
+      
+      for(let j = i * i; j <= n; j += i){
+        ehPrimo[j] = false;
+      }
+    }
+  } 
+
+  const primos = []
+  for( let i = 2; i <= n; i++){
+    if(ehPrimo[i]){
+      primos.push(i)
+    }
+  }
+  return primos
+
+}
+const primoResult = primosMenoresOuIguais(9)
+console.log(primoResult)
+
+//dados: o número por paramtro
+// O que fazer com os dados: verificar se o número é apenas divisivel por um e pelo proprio número.
+//há alguma restrição?: se o numero tiver mais de dois divisores, ele não é primo
+//resultado esperado: os numero primos menores ou iguais ao número fornecido por parâmetro
+
+//passos lógicos a serem seguidos:
+// 1. receber o parametro
+// 2. criar variável para verificar se número é primo que inicializa com true
+// 3. verificar se o numero é menor ou igual a 1, se sim, mudar o valor da variável anterior para false
+// 4. 
+
+
+// function invertida(str){
+//   return str.split('').reverse().join('')
+// }
+
+// console.log(invertida('luiza'))
+
+// function invertidez(str){
+//   let arrayVoid = []
+
+//   for(let i = 0; i < str.length; i++){
+//     const retorno = str[i]
+//     arrayVoid.unshift(retorno)
+//   }
+
+//   return arrayVoid
+// }
+
+// console.log(invertidez('luiza'))
+
+function equacaoDoSegundoGrau(a, b, c){
+  let resultadoEsquacao = Math.sqrt(a) - 4 * a * c
+
+  if(a !== 0 && b !== 0 && c !== 0){
+    console.log("A equação é completa")
+    return resultadoEsquacao
+  } else if(a === 0 && b === 0 && c === 0){
+    resultadoEsquacao
+    console.log("A equação é incompleta")
+  }
+}
+const resultEquacao = equacaoDoSegundoGrau(1, -1, -12)
+console.log(resultEquacao)
