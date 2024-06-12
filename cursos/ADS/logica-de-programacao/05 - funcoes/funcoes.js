@@ -604,21 +604,53 @@ console.log(resultadoFatorial)
 
 // console.log("\n\n\n\n\n")
 
-// const binaryToDecimal = function (n) {
-//   let resultado = 0
-//   const potencia = 2
+const binaryToDecimal = function (n) {
+  let resultado = 0
+  const potencia = 2
+  console.log("duh")
 
-//   for (let i = 0; i < n.length; i++) {
-//     const resultadoMath = potencia ** i * parseInt(n[n.length - 1 - i]);
-//     resultado += resultadoMath;
-//   }
+  for (let i = 0; i < n.length; i++) {
+    const resultadoMath = potencia ** i * parseInt(n[n.length - 1 - i]);
+    resultado += resultadoMath;
+  }
 
-//   return resultado
+  return resultado
 
-// }
-// const resultadoDecimal = binaryToDecimal("111111")
-// console.log(resultadoDecimal)
+}
+const resultadoDecimal = binaryToDecimal("10110")
+console.log(resultadoDecimal)
 
+
+function decimalToBinary(n) {
+  let resultado = ""
+
+  if (n === 0) {
+    return "0"
+  }
+
+  while (n > 0) {
+    resultado = (n % 16) + resultado
+    n = Math.floor(n / 16) //para remover o bit menos significativo processado
+  }
+  return resultado
+}
+
+const resultadoBinary = decimalToBinary(605)
+console.log(resultadoBinary)
+
+
+function decimalToHexadecimal(n){
+  let resultado = 0
+
+  for(let i = 0; i < n; i++){
+    resultado +=   n * Math.pow(16)
+   
+  }
+  return resultado
+}
+
+const resultDecimalToHex = decimalToHexadecimal(2513)
+console.log(resultDecimalToHex)
 
 // console.log("\n\n\n\n\n")
 
@@ -792,13 +824,13 @@ function maiorNumero(array) {
 
 }
 
-const numeroMenor = [30, 20, 10]
-const resultMaiorNumero = maiorNumero(numeroMenor)
-console.log(resultMaiorNumero)
+// const numeroMenor = [30, 20, 10]
+// const resultMaiorNumero = maiorNumero(numeroMenor)
+// console.log(resultMaiorNumero)
 
 
-const resultMenorNumero = menorNumero();
-console.log(resultMenorNumero)
+// const resultMenorNumero = menorNumero();
+// console.log(resultMenorNumero)
 
 
 function menorNumero() {
@@ -830,8 +862,8 @@ function valorMaximo() {
   return total
 }
 
-const valorMaximun = valorMaximo()
-console.log(valorMaximun)
+// const valorMaximun = valorMaximo()
+// console.log(valorMaximun)
 
 
 // como o mercado é dividido. Quais os termos em que o mercado é dividido. O que é o backend, o frontend. termeos tecnicos da programaçã e do mercado de trabalho.
@@ -855,8 +887,8 @@ function factororial(n) {
   return resultado
 }
 
-const factorialll = parseInt(factororial(-5))
-console.log(factorialll)
+// const factorialll = parseInt(factororial(-5))
+// console.log(factorialll)
 
 
 console.log("\n\n\n\n")
@@ -928,6 +960,7 @@ function velocidadePermitida() {
 
 
 
+// pares = resultPares
 
 //passos para resolver o algoritmo:
 
@@ -942,154 +975,156 @@ function velocidadePermitida() {
 
 
 
-// Metódo 5Qs:
-// Quais são os dados necessários?
-// Os primeiros números da sequência FIbonacci
+// // Metódo 5Qs:
+// // Quais são os dados necessários?
+// // Os primeiros números da sequência FIbonacci
 
-// Oque devo fazer com esses dados?
-// somar cada número ao anterior
+// // Oque devo fazer com esses dados?
+// // somar cada número ao anterior
 
-// Há alguma restrição?
-
-
-// resultado esperado
-//gerar os primeiros números primos
-
-// quais os passos lógicos para resolver esse algoritmo
-// 1. criar um array com números de 0 a 10
-// 2. fazer um laço de repetição com o for() para que o contador itere sobre o array
-// 3. somar cada número aos doi numeros anteriores 
-// retornar cada soma.
+// // Há alguma restrição?
 
 
+// // resultado esperado
+// //gerar os primeiros números primos
 
-function sequenciaDeFibonacci() {
-  const n = 10
-  let penultimo = 0
-  let ultimo = 1
+// // quais os passos lógicos para resolver esse algoritmo
+// // 1. criar um array com números de 0 a 10
+// // 2. fazer um laço de repetição com o for() para que o contador itere sobre o array
+// // 3. somar cada número aos doi numeros anteriores 
+// // retornar cada soma.
 
 
 
-  for (let i = 0; i < n; i++) {
-    let proximo = penultimo + ultimo;
-    penultimo = ultimo;
-    ultimo = proximo;
-
-    console.log(proximo)
-  }
-
-  return ultimo
-  split()
-}
-
-const reusltadoFibonacci = sequenciaDeFibonacci()
-console.log(reusltadoFibonacci)
+// function sequenciaDeFibonacci() {
+//   const n = 10
+//   let penultimo = 0
+//   let ultimo = 1
 
 
 
-console.log("\n\n\n\n")
+//   for (let i = 0; i < n; i++) {
+//     let proximo = penultimo + ultimo;
+//     penultimo = ultimo;
+//     ultimo = proximo;
 
-function criteriosDeSenha(arr) {
-  let resultado = []
+//     console.log(proximo)
+//   }
 
+//   return ultimo
+//   split()
+// }
 
-
-  if (arr.length > 8) {
-    let hasUpperCase = false;
-    let hasLowerCase = false;
-    let hasATsimbol = false;
-
-
-    for (let i = 0; i < arr.length; i++) {
-      const char = arr[i];
-
-      if (char === "@") {
-        hasATsimbol = true
-      } else if (char === char.toUpperCase()) {
-        hasUpperCase = true
-      } else if (char === char.toLowerCase()) {
-        hasLowerCase = true
-      }
-    }
-    if (hasLowerCase && hasUpperCase && hasATsimbol) {
-      resultado.push(arr);
-    }
-  }
-
-  return resultado;
-}
-
-// const resultSenha = criteriosDeSenha(["Larysmith@"])
-// console.log(resultSenha)
-function criteriosDeSenha(password) {
-  let resultado = []
-  const numMaximo = 8
-
-  if (password.length >= numMaximo) {
-    let hasUpperCase = false;
-    let hasLowerCase = false;
-    let hasATsimbol = false;
-
-    for (let i = 0; i < password.length; i++) {
-      let char = password[i];
-
-      if (char === "!" || char === "@" || char === "#") {
-        hasATsimbol = true;
-      } else if (char === char.toUpperCase()) {
-        hasUpperCase = true;
-      } else if (char === char.toLowerCase()) {
-        hasLowerCase = true;
-      }
-
-
-    }
-
-    if (hasLowerCase === true && hasUpperCase === true && hasATsimbol === true) {
-      resultado.push(password);
-    } else {
-      console.log("Formato de senha incorreto. Sua senha deve conter ao menos 1 letra maiulcula, 1 minuscula e um caractere")
-    }
-
-
-  }
-
-  return resultado;
-}
-const resultSenha = criteriosDeSenha("Lary@smi#th!");
-console.log(resultSenha);
+// const reusltadoFibonacci = sequenciaDeFibonacci()
+// console.log(reusltadoFibonacci)
 
 
 
-console.log("\n\n\n\n")
+// console.log("\n\n\n\n")
+
+// function criteriosDeSenha(arr) {
+//   let resultado = []pares = resultPares
 
 
-function primosMenoresOuIguais(n) {
-  const ehPrimo = new Array(n + 1).fill(true);
 
-  if (n <= 1) {
-    return false
-  }
 
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (ehPrimo) {
-      
-      for(let j = i * i; j <= n; j += i){
-        ehPrimo[j] = false;
-      }
-    }
-  } 
+//   if (arr.length > 8) {
+//     let hasUpperCase = false;
+//     let hasLowerCase = false;
+//     let hasATsimbol = false;
 
-  const primos = []
-  for( let i = 2; i <= n; i++){
-    if(ehPrimo[i]){
-      primos.push(i)
-    }
-  }
-  return primos
 
-}
-const primoResult = primosMenoresOuIguais(9)
-console.log(primoResult)
+//     for (let i = 0; i < arr.length; i++) {
+//       const char = arr[i];
+
+//       if (char === "@") {
+//         hasATsimbol = true
+//       } else if (char === char.toUpperCase()) {
+//         hasUpperCase = true
+//       } else if (char === char.toLowerCase()) {
+//         hasLowerCase = true
+//       }
+//     }
+//     if (hasLowerCase && hasUpperCase && hasATsimbol) {
+//       resultado.push(arr);
+//     }
+//   }
+
+//   return resultado;
+// }
+
+// // const resultSenha = criteriosDeSenha(["Larysmith@"])
+// // console.log(resultSenha)
+// function criteriosDeSenha(password) {
+//   let resultado = []
+//   const numMaximo = 8
+
+//   if (password.length >= numMaximo) {
+//     let hasUpperCase = false;
+//     let hasLowerCase = false;
+//     let hasATsimbol = false;
+
+//     for (let i = 0; i < password.length; i++) {
+//       let char = password[i];
+
+//       if (char === "!" || char === "@" || char === "#") {
+//         hasATsimbol = true;pares = resultPares
+
+//       } else if (char === char.toUpperCase()) {
+//         hasUpperCase = true;
+//       } else if (char === char.toLowerCase()) {
+//         hasLowerCase = true;
+//       }
+
+
+//     }
+
+//     if (hasLowerCase === true && hasUpperCase === true && hasATsimbol === true) {
+//       resultado.push(password);
+//     } else {
+//       console.log("Formato de senha incorreto. Sua senha deve conter ao menos 1 letra maiulcula, 1 minuscula e um caractere")
+//     }
+
+
+//   }
+
+//   return resultado;
+// }
+// const resultSenha = criteriosDeSenha("Lary@smi#th!");
+// console.log(resultSenha);
+
+
+
+// console.log("\n\n\n\n")
+
+
+// function primosMenoresOuIguais(n) {
+//   const ehPrimo = new Array(n + 1).fill(true);
+
+//   if (n <= 1) {
+//     return false
+//   }
+
+//   for (let i = 2; i <= Math.sqrt(n); i++) {
+//     if (ehPrimo) {
+
+//       for (let j = i * i; j <= n; j += i) {
+//         ehPrimo[j] = false;
+//       }
+//     }
+//   }
+
+//   const primos = []
+//   for (let i = 2; i <= n; i++) {
+//     if (ehPrimo[i]) {
+//       primos.push(i)
+//     }
+//   }
+//   return primos
+
+// }
+// const primoResult = primosMenoresOuIguais(9)
+// console.log(primoResult)
 
 //dados: o número por paramtro
 // O que fazer com os dados: verificar se o número é apenas divisivel por um e pelo proprio número.
@@ -1122,16 +1157,113 @@ console.log(primoResult)
 
 // console.log(invertidez('luiza'))
 
-function equacaoDoSegundoGrau(a, b, c){
-  let resultadoEsquacao = Math.sqrt(a) - 4 * a * c
+// function equacaoDoSegundoGrau(a, b, c) {
+//   let resultadoEsquacao = Math.sqrt(a) - 4 * a * c
 
-  if(a !== 0 && b !== 0 && c !== 0){
-    console.log("A equação é completa")
-    return resultadoEsquacao
-  } else if(a === 0 && b === 0 && c === 0){
-    resultadoEsquacao
-    console.log("A equação é incompleta")
+//   if (a !== 0 && b !== 0 && c !== 0) {
+//     console.log("A equação é completa")
+//     return resultadoEsquacao
+//   } else if (a === 0 && b === 0 && c === 0) {
+//     resultadoEsquacao
+//     console.log("A equação é incompleta")
+//   }
+// }
+// const resultEquacao = equacaoDoSegundoGrau(1, -1, -12)
+// console.log(resultEquacao)
+
+
+
+// function equacaoDo1grau({a, b, c}){
+//   let isolateX = a == c + b 
+
+//   let x = isolateX / isolateX 
+
+
+//   return x
+// }
+// console.log(equacaoDo1grau({a: 5, b: 20, c: 4}))
+
+console.log("\n\n\n\n")
+
+
+function problemaSoma(array) {
+  let resultDecimal = 0
+  let resultPares = 0
+  let resultImpares = 0
+
+
+
+  for (let i = 0; i < array.length; i++) {
+    resultDecimal += array[i]
+
+    if (array[i] % 2 === 0) {
+      resultPares += array[i]
+    } else if(array[i] % 2 !== 0){
+      resultImpares += array[i]
+    }
+
   }
+
+  
+  let paresHex = ''
+  let num = resultPares
+
+  while (num > 0) {
+    let hexMod = num % 16
+    paresHex = hexMod.toString(16).toUpperCase() + paresHex
+    num = Math.floor(num / 16)
+    console.log("jajajajaj")
+  }
+
+
+  let resultOct = ''
+  let number = resultImpares
+
+  while(number > 0){
+    resultOct = (number % 8) + resultOct
+    number = Math.floor(number / 8)
+  }
+
+
+  return {paresHex, resultDecimal, resultOct}
 }
-const resultEquacao = equacaoDoSegundoGrau(1, -1, -12)
-console.log(resultEquacao)
+
+const resultProblemaSoma = problemaSoma([10, 127, 10])
+console.log(resultProblemaSoma)
+
+
+//Tecnica pomodoro: estuda 25min, descansa 5
+//repetição espacada para aprende: Seg, Ter, Quar, Sex, dom
+
+
+//traformar o numero decimal em binário e depois em hexagonal
+
+// while (n > 0) {
+//   resultado = (n % 8) + resultado
+//   n = Math.floor(n / 8) //para remover o bit menos significativo processado
+// }
+// return resultado
+
+
+function media(array){
+    let resultado = 0
+    let soma = 0
+
+    for(let i = 0; i < array.length; i++){
+       
+      soma += array[i]
+
+     resultado =  soma / array.length
+    }
+    return resultado 
+}
+
+const resultMedia = media([5,  10, 3])
+console.log(resultMedia)
+
+console.log("\n\n\n")
+
+
+function numeroEspelho(n){
+
+}
