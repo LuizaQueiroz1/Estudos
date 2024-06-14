@@ -53,3 +53,38 @@ Tecnicas
 
 ## Eventos DOM
 Eventos são alterações que posso fazer em um elemento
+
+
+## Eventos JS:
+Eventos são ações disparadas pela interação do usuário na página. É o correto manejo desses eventos que tornam as paginas interativas e dinâmicas.
+Extem muitos eventos que pode ser acionado no JS. Abaixo estão os principais:  
+
+- onclick -> disparado quando recebe um click
+
+- ondblclick -> disparado quando recebe dois clicks
+
+- onmouseover -> disparado quando o mouse está sobre
+
+- onmouseout -> disparado quando o mouse é movido para fora do elemento 
+
+- onmousemove -> disparado quando o mouse é movido no elemento 
+
+- onmousedown -> disparado quando o clique no botão foi pressionado.
+
+- onmouseup -> disparado quando o clique do botão é liberado
+
+- onfocus -> disparado quando o elemento recebe foco. Válido para input
+
+- onchange -> dispara quando há mudança de conteúdo. "Ao mudar"
+
+- onblur -> diparado quando o elemento perder o foco
+
+- onkeydown -> disparado quando uma tecka pé pressionada
+
+- onkeypress -> disparado quando uma tecla é prossionada e solta
+
+- onkeyup -> disparado quando uma tecla é solta sobre um elemento 
+
+- onload -> disparado quando a pagina teminou de ser carregada. body.
+
+- onresize -> disparado quando a um redirecionamento da janela  

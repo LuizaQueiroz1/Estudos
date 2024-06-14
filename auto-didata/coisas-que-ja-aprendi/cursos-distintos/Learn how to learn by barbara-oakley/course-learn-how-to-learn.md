@@ -45,3 +45,11 @@ Há muito mais links e posso encontra-los na parte do Menu no site COursera, no 
 
 "Se você pensa que pode ou não pode, você está certo" Henry Ford
 
+
+
+aprender por osmose
+estar no nívek b1 em ingles é bom
+ordinária significado
+estigma
+Benny Lewis
+mnemônicos
