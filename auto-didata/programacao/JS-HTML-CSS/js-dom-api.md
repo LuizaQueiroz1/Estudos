@@ -38,3 +38,18 @@ com o electronJs  ex.: visual studio code
 
 
 - O DOM torna possível criar elementos HTML, deletar, acessar, trocar por meio de metódos
+
+
+- O DOM é um facilitador para dar acesso aos elementos da nossa página diretamente ao JavaScript. Árvore DOM
+
+Tecnicas
+- tagName
+- id
+- class 
+- ClassName
+- querySelector
+
+
+
+## Eventos DOM
+Eventos são alterações que posso fazer em um elemento

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <!-- <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: darkcyan;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        let a = window.document.getElementById("area")
+        function clicar(){
+            
+            a.innerHTML = "clicou"
+            a.style.background = "red"
+    }
+
+    function entrar(){
+       a.innerText = "entrou" 
+       
+    }
+
+    function sair(){
+        a.innerText = "Saiu"
+    }
+    </script> -->
+    <style>
+        body{
+            font: normal 16pt Arial;
+            background: gray;
+        }
+
+        input{
+            color: black;      
+            font: normal 14pt verdana;
+            width: 200px;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+
+    <h1>Somando Números</h1>
+
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>function somar(){
+        let txn1 = window.document.getElementById("txtn1")
+        let txn2 = window.document.getElementById("txtn2")
+        let res = window.document.getElementById("res")
+
+        let n1 = Number(txn1.value) //passando o valor do input para número
+        let n2 = Number(txn2.value)
+        let s = n1 + n2
+
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+
+    }
+
+    </script>
+</body>
+</html>

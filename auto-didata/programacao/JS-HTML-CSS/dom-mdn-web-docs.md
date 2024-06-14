@@ -65,3 +65,30 @@ o elemento HTML é um item da: faz parte da dela. Uma TAG HTML altera a maneira 
 Uma **propriedade** é um valor que você pode obter ou atribuir(como alterar o conteúdo de um elemento HTML)
 
 Um metódo é uma ação que você pode realizar(como adicionar ou excluir um elemento HTML)
+
+A maneira mais facil de obter o conteúdo de um elemento é usando o innerHTML propriedade.
+O innerHTML propriedade pode ser usada para obter qualquer elemento html, incluindo <html> e <body>
+
+O objeto document representa a paǵina web
+Para acessar qualquer elemento em uma página HTML, primeiro preciso acessar o objeto documento.
+
+## Alterando elementos HTML:
+
+**Propriedades**
+- element.innerHTML = new HTML content 
+- element.attribute = new value
+- element.style.property = new style
+
+**Metodo**
+- element.set.attribute(attribute, value) -  change the attribute value of an element
+
+## Adicionando e excluindo elementos
+
+**Metodos**
+- document.createElement                       (element)                                                                                              
+- document.removeChild(element)
+- document.appendChild(element)  - add an HTML element
+- document.replaceChild(new, old)  - replace an HTML element 
+
+
+OBS.: Estudar como utilizar operador ternário em JS

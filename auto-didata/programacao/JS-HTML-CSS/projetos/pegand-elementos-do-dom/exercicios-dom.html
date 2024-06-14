@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h1>Estudando manipulação DOM</h1>
+    <p>Aqui vai ser o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = "white"
+
+        var p1 = document.getElementsByTagName("p")[1]
+        window.document.write(("Está escrito assim: " + p1.innerText))
+        p1.style.color = "blue"
+
+        let d = window.document.querySelector("div#msg")
+        d.style.background = "red"
+
+    </script>
+</body>
+</html>
