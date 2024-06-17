@@ -24,14 +24,24 @@
     </style>
 </head>
 
-<body>
+<body onresize="console.log('houve um redimensionamento')">
     <div id="onclick">
         <h1>Praticando os eventos JS</h1>
         <h2>Eventos Js</h2>
         <p id="texto"></p>
 
-        <button ondblclick="eventodblClick()">Clique aqui</button>
+        <button ondblclick="eventodblClick()"  onclick="eventoClick()">Clique aqui</button>
     </div>
+
+    <br> <br>
+
+    <select  onchange="mudou()" id="itens">
+        <option value="1">valor 1</option>
+        <option value="2">valor 2</option>
+        <option value="3">valor 3</option>
+        <option value="4">valor 4</option>
+        <option value="5">valor 5</option>
+    </select>
 
     <br> <br>
 
@@ -39,36 +49,11 @@
         <h2>Evento onmouseover aqui</h2>
     </div>
 
-    <script>
-        function eventoClick() {
-            alert("Acionou um evento de click");
-            document.body.style.background = "purple";
-        }
+    <br>
 
-        function eventodblClick() {
-            alert("evento de clique duplo")
-        }
+    <script src="script.js"></script>
 
-        function eventoMouseOver() {
-            let d = document.getElementById("onmouseoverANDonmouseout")
-            // d.style.borderRadius = "50%"
-            d.style.background = "red"
-        }
-
-        function eventoMouseOut(){
-            let d = document.getElementById("onmouseoverANDonmouseout");
-            d.style.width = "300px"
-            d.style.height = "200px"
-            d.style.background = "blue"
-            d.style.borderRadius = "0%"
-        }
-
-        // function eventoMouseMove(){
-        //     let p = document.getElementById("texto")
-        //     p.append("Moveu o mouse")
-
-        // }
-    </script>
+    <input onkeypress="teclaPressionada()" onblur="eventoClick()" id="campoTexto" type="text" style="padding: 80px; font-size: 40px;" placeholder="Digite alguma coisa" onfocus="limpaTexto()" value="Já tem texto">
 </body>
 
 </html>

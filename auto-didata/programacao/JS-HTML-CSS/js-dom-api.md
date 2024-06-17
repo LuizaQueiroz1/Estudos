@@ -59,6 +59,7 @@ Eventos são alterações que posso fazer em um elemento
 Eventos são ações disparadas pela interação do usuário na página. É o correto manejo desses eventos que tornam as paginas interativas e dinâmicas.
 Extem muitos eventos que pode ser acionado no JS. Abaixo estão os principais:  
 
+1. foco em mouse
 - onclick -> disparado quando recebe um click
 
 - ondblclick -> disparado quando recebe dois clicks
@@ -73,18 +74,24 @@ Extem muitos eventos que pode ser acionado no JS. Abaixo estão os principais:
 
 - onmouseup -> disparado quando o clique do botão é liberado
 
+
+2. foco em input
 - onfocus -> disparado quando o elemento recebe foco. Válido para input
 
 - onchange -> dispara quando há mudança de conteúdo. "Ao mudar"
 
 - onblur -> diparado quando o elemento perder o foco
 
+
+3. Teclas pressionadas
 - onkeydown -> disparado quando uma tecka pé pressionada
 
 - onkeypress -> disparado quando uma tecla é prossionada e solta
 
-- onkeyup -> disparado quando uma tecla é solta sobre um elemento 
+- onkeyup -> disparado quando uma tecla é solta sobre um elemento
 
+
+4. disparaado na tag body quando a pagina é carregada completamente
 - onload -> disparado quando a pagina teminou de ser carregada. body.
 
-- onresize -> disparado quando a um redirecionamento da janela  
+- onresize -> disparado quando a um redimencionamento da tela  
