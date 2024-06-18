@@ -1,6 +1,6 @@
 # DOM pela documentação do site MDN WEB DOCS
 
-O DOM é uma estrutura que trasforma o código estatico em experiências dinamica com JS(ou qualquer outra linguagem)
+O DOM é uma estrutura que trasforma o código estatico em experiências dinamica com JS(ou qualquer outra linguagem).
 
 Quando uma pagina web é carregada, o navegador cria um modelo de objeto de documento da página.
 O modelo HTML DOM é construido como uma árvore de objetos
@@ -10,9 +10,9 @@ O DOM representa o documento com nós e objetos, dessa forma, as linguagens de p
 
 Todos as propriedades, metódos e eventos são organizados em objetos(por exemplo, o objeto de document que representa o próprio elemento, o objeto de table que implementa a interface especial DOM HTMLTableElement para acessar tabelas no HTML e assim por diante )
 
-- O DOM moderno é constrído por várias APIS que trabalham juntas. O DOM principal define os objetos que descrevem fundamentalmente um documento e os objetos dentro dele. Isso é expandido quando necessario por outras APIS que adicionam novos recursos e capacidades ao DOM.
+- O DOM moderno é constrído por várias APIs que trabalham juntas. O DOM principal define os objetos que descrevem fundamentalmente um documento e os objetos dentro dele. Isso é expandido quando necessario por outras APIS que adicionam novos recursos e capacidades ao DOM.
 
-- O DOM não é uma linguagem de programacão, mas sem ela, o JS não teria nenhuma noção de paginas web, documento HTML, documentos XMl e suas partes componentes(por exemplo, os elementos.)
+- O DOM não é uma linguagem de programacão, mas sem ela, o JS não teria nenhuma noção de paginas web, documento HTML, documentos XML e suas partes componentes(por exemplo, os elementos.)
 
 - O JS e o DOM estavam fortemente ligados, mas, eventualmente, evoluiram como entidades separadas. Portanto, as implementações DOM podem ser contruidas em qualquer idioma. Equação aproximada do DOM:
 
@@ -20,7 +20,7 @@ API(pagina HTML ou XML) = DOM + JS(linguagem de Script)
 
 ## Tipos de dados fundamentais
 
-- Document: quando um membro retorna um objeto tipo do elemento **document** (por exemplo, a propriedade **ownerDocument** de um elemento retorna a qual documento ele pertence), esse object é o o proprio objeto do document raiz
+- Document: quando um membro retorna um objeto tipo do elemento **document** (por exemplo, a propriedade **ownerDocument** de um elemento retorna a qual documento ele pertence), esse object é o proprio objeto do document raiz.
 
 - Node: todo objeto localizado em um documento é um nó de algum tip. Em documento HTML um objeto pode ser um nó de elemento, mas também um nó de texto ou atributo. 
 
@@ -32,7 +32,7 @@ API(pagina HTML ou XML) = DOM + JS(linguagem de Script)
 
 - Attribute: quando um attribute é retornado por um element (por exemplo, pelo metódo create a attribute), é um objeto de referência que expõe uma interface especial, (embora pequena) para atributos
 
-- NamedNodeMap: é como um array, mas os itens são acessados por nome ou índice, embora no último caso seja opcional, pois os não estão em ordem específica na lista. 
+- NamedNodeMap: é como um array, mas os itens são acessados por nome ou índice, embora no último caso seja opcional, pois os itens não estão em ordem específica na lista. 
 
 ## Interfaces na disponibilização DOM e como são disponibilizadas
 
@@ -42,11 +42,11 @@ Muitos objetos pegam emprestados de interfaces diferentes. O objeto table, por e
 ### Interfaces core do DOM
 Os objetos window e document são os mais usados. O window representa algo como o browser e o objeto document é a raiz de todo documento em si. 
   
-Element herda dessa interface Node genírica, e juntamente com essas duas interfaces fornece muitos dos metódos e propriedades que utilizo em elementos individuais. 
+Element herda dessa interface Node genérica, e juntamente com essas duas interfaces fornece muitos dos metódos e propriedades que utilizo em elementos individuais. 
 
 ## Definição de API
 
-Uma API é um intermediário entre um sistema maior e terceiros(sejam eles, progrmadore, usuários...) 
+Uma API é um intermediário entre um sistema maior e terceiros(sejam eles, programadores, usuários...) 
 Ex.: a API é como um garçom, pois ele é o intermediário entre você e a cozinha.
 
 As Application Programing Interface(interface de programação de aplicações) são um conjunto de ferramentas, definições, protocolos e funções para a criação de aplicação de software.
@@ -59,7 +59,7 @@ As APIs funcionam como um contrato, com documentações que representam um acord
 
 
 ## OBS.: sobre elementos, tags e tributos: 
-o elemento HTML é um item da: faz parte da dela. Uma TAG HTML altera a maneira que esse elemento aparece e o atributo são as característica desse elemento.
+o elemento HTML é um item da: faz parte da tela. Uma TAG HTML altera a maneira que esse elemento aparece e o atributo são as característica desse elemento.
 
 
 Uma **propriedade** é um valor que você pode obter ou atribuir(como alterar o conteúdo de um elemento HTML)
@@ -67,7 +67,7 @@ Uma **propriedade** é um valor que você pode obter ou atribuir(como alterar o 
 Um metódo é uma ação que você pode realizar(como adicionar ou excluir um elemento HTML)
 
 A maneira mais facil de obter o conteúdo de um elemento é usando o innerHTML propriedade.
-O innerHTML propriedade pode ser usada para obter qualquer elemento html, incluindo <html> e <body>
+O innerHTML propriedade pode ser usada para obter qualquer elemento html, incluindo **html** e **body**
 
 O objeto document representa a paǵina web
 Para acessar qualquer elemento em uma página HTML, primeiro preciso acessar o objeto documento.

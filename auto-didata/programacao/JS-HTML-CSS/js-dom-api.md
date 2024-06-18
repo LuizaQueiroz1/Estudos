@@ -30,7 +30,7 @@ com o electronJs  ex.: visual studio code
 
 1. Permeite que o HTML, CSS, HML e o JS possam manipular para construir páginas e conteúdos através dos navegadores.
 
-- Quem coloca ordem no DOM e em outros padrões da internet é a W3C(World Wide Web Consortium) - que detro dela tem a Web platform work Group(que controla diretamente o DOM)
+- Quem coloca ordem no DOM e em outros padrões da internet é a W3C(World Wide Web Consortium) - que dentro dela tem a Web platform work Group(que controla diretamente o DOM)
 
 - Varias empresas se juntaram para desenvolver uma linguagem de script padronizada - daí surgiu o ECMAScript(1997) depois disso veio o nascimento do JavaScript
 
@@ -74,14 +74,16 @@ Extem muitos eventos que pode ser acionado no JS. Abaixo estão os principais:
 
 - onmouseup -> disparado quando o clique do botão é liberado
 
+///
 
 2. foco em input
 - onfocus -> disparado quando o elemento recebe foco. Válido para input
 
 - onchange -> dispara quando há mudança de conteúdo. "Ao mudar"
 
-- onblur -> diparado quando o elemento perder o foco
+- onblur -> disparado quando o elemento perder o foco
 
+///
 
 3. Teclas pressionadas
 - onkeydown -> disparado quando uma tecka pé pressionada
@@ -91,7 +93,13 @@ Extem muitos eventos que pode ser acionado no JS. Abaixo estão os principais:
 - onkeyup -> disparado quando uma tecla é solta sobre um elemento
 
 
-4. disparaado na tag body quando a pagina é carregada completamente
+///
+
+4. disparado na tag body quando a pagina é carregada completamente
+
 - onload -> disparado quando a pagina teminou de ser carregada. body.
 
-- onresize -> disparado quando a um redimencionamento da tela  
+- onresize -> disparado quando a um redimencionamento da tela
+
+CAMELCASE
+browsers
