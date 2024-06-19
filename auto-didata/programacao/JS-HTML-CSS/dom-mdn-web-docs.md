@@ -91,4 +91,4 @@ Para acessar qualquer elemento em uma página HTML, primeiro preciso acessar o o
 - document.replaceChild(new, old)  - replace an HTML element 
 
 
-OBS.: Estudar como utilizar operador ternário em JS
+OBS.: Estudar como utilizar operador ternário em JS.

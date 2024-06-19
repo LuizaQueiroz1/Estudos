@@ -201,3 +201,10 @@ Nem toda função tem parametro ou retorno
 Funções são ações executadas assim que são chamadas ou em decorrência de algum evento
 
 Uma função pode receber parâmetros e retornar resultados
+
+
+## Função callback
+Permite executar uma função depois de uma determinada ação
+conceito fundamental para entender programação assincrona de JS
+
+programaçao assincrona

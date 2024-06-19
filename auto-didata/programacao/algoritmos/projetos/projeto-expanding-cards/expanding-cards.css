@@ -1,0 +1,82 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    flex-grow: 5;
+    padding: 20px;
+    gap: 12px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.divcard1 {
+    
+    width: 300px;
+    height: 850px;
+    background-image: url(project-images/image1.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    background-position: center right;
+}
+
+.divcard2 {
+    width: 300px;
+    height: 850px;
+    background-image: url(project-images/image2.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 35px;
+}
+
+
+.divcard3 {
+    width: 300px;
+    height: 850px;
+    background-image: url(project-images/image3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 35px;
+}
+
+.divcard4 {
+    width: 300px;
+    height: 850px;
+    background-image: url(project-images/image4.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 35px;
+}
+
+
+.divcard5 {
+    width: 300px;
+    height: 850px;
+    background-image: url(project-images/image5.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
+    border-radius: 35px;
+}
+
+
+.card {
+    width: 100%;
+}
+
+
+
