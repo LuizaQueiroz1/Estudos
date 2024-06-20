@@ -1,4 +1,6 @@
-# Verbs 
+# Mixing
+
+## 10 VERBS
 1. To do; presente: do,
  passado: did,
  paricípio passado: done
@@ -28,4 +30,45 @@
 digging
 
 Aconimo OCEAN => apeness, concienciosny, extroversion, agriableness, neuroticism
+
+## 10 NOUNS
+
+
+
+
+
+
+
+
+## 10 ADJECTIVES  
+
+
+
+
+
+
+
+borrowed: emprestado
+heritage
+tough times
+enjoyable: agradavél
+
+however
+therefore
+meanwhile
+
+blending
+sight
+
+Use different sentence types: Include a mix of declarative, interrogative, imperative, and exclamatory sentences.
+
+to come along too
+
+Employ literary devices: Metaphors, similes, and personification can make your writing more vivid.
+
+Use descriptive language: Incorporate adjectives and adverbs to add depth.
+Example: "The old, creaky house stood at the end of the deserted street."
+
+chased = perseguido
+hurdle = obstaculo
 

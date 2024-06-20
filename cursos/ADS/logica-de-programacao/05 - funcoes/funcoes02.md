@@ -207,4 +207,6 @@ Uma função pode receber parâmetros e retornar resultados
 Permite executar uma função depois de uma determinada ação
 conceito fundamental para entender programação assincrona de JS
 
+As callback functions são recursos imprescindiveis em java Script para operações assincronas, como requisições HTTP, leitura/escrita de arquivos, timers, entre outros...
+
 programaçao assincrona
