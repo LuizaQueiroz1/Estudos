@@ -14,7 +14,7 @@
 // Arrow Function
 let soma = (numero1, numero2) => numero1 + numero2;
 
-console.log(soma(5, 5))
+// console.log(soma(5, 5))
 
 //
 
@@ -32,8 +32,8 @@ function iterandoArray(arr) {
     return posArray
 }
 
-const resultaIteando = iterandoArray([4, 6, 5, 7, 8, 2])
-console.log(resultaIteando)
+// const resultaIteando = iterandoArray([4, 6, 5, 7, 8, 2])
+// console.log(resultaIteando)
 
 
 console.log("\n\n\n\n")
@@ -50,7 +50,7 @@ function showAlert() {
     console.log("This is a calback function");
 }
 
-console.log(somaa(5, 5, showAlert));
+// console.log(somaa(5, 5, showAlert));
 
 
 console.log("\n\n\n\n")
@@ -66,7 +66,7 @@ function arr(callback) {
 function Ntelefone(arr) {
     console.log("Número de telefone retornado", arr)
 }
-arr(Ntelefone)
+// arr(Ntelefone)
 
 
 console.log("\n\n\n\n")
@@ -85,7 +85,7 @@ function inverterdString(arr) {
     return arrVoid
 }
 
-console.log(inverterdString("lari"))
+// console.log(inverterdString("lari"))
 
 
 console.log("\n\n\n\n")
@@ -116,5 +116,11 @@ function resultadoBiggestNumber(number) {
     console.log("Esse é o número maior", number)
 }
 
-biggestNumber(resultadoBiggestNumber)
+// biggestNumber(resultadoBiggestNumber)
+
+
+
+console.log("\n\n\n\n")
+
+
 

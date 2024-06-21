@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evento listener</title>
+    <style>
+        .wrapper {
+            position: relative;
+            height: 40vh;
+        }
+
+        #message {
+            
+            background: black;
+            color: white;
+            width: fit-content;
+            margin-bottom: 2rem;
+        }
+
+        #button {
+            position: absolute;
+            left: 45%;
+            text-align: center;
+            
+            background-color: purple;
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 80px;
+            height: 50px;
+            padding: 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background-color: palevioletred;
+        }
+
+        .hide {
+            visibility: hidden;
+        }
+
+        .reveal {
+            visibility: visible;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="message" class="hide">
+            Você não vai ver essa mensagem até tocar no botão. CLique de novo para me esconder.
+        </div>
+    </div>
+
+    <div id="button">
+        Clique em mim!
+    </div>
+
+    <script src="dom.metodo.js"></script>
+</body>
+</html>

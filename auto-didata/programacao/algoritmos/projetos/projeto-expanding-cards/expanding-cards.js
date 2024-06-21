@@ -1,11 +1,18 @@
 
 
+const panels = document.querySelectorAll('.panels')
 
-let div = document.querySelectorAll("card")
-
-console.log(div)
-
-div.addEventListener("onClick", function() {
-    let card = document.querySelector(".card");
-    card.classList.toggle('.active')
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        
+        panel.classList.add('active')
+    })
 })
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    
+    })
+}
