@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        dialog::backdrop{
+            background-color: rgba(128, 128, 128, 0.336);
+        }
+        dialog{
+            display: flex;
+            visibility: hidden;
+            width: 400px;
+        }
+
+        span{
+            color: black;
+            cursor: pointer;
+        }
+
+        div {
+          
+        }
+    </style>
+</head>
+<body>
+    <button id="bnt1">Clique aqui</button>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores labore totam officia sit, beatae in magnam praesentium! Nulla doloribus libero eligendi quis cupiditate? </p>
+    <dialog>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at sed corrupti doloremque! Numquam ipsum provident saepe deserunt voluptates ab soluta ullam quidem vero architecto sunt, molestias rerum sint incidunt.</p>
+        <div>
+            <span class="material-symbols-outlined">
+                close
+                </span>
+        </div>
+    </dialog>
+    
+    <script>
+        let bnt1 = document.getElementById("bnt1")
+        let bnt2 = document.querySelector("span")
+        let popUp = document.querySelector("dialog")
+        let par = document.querySelector("p")
+
+        bnt1.addEventListener('click', () => {
+            par.innerHTML = "ABRIU O POPUP"
+        })
+
+        bnt1.onclick = function(){
+            popUp.showModal()
+            popUp.style.visibility = 'visible'
+        }
+
+        bnt2.onclick = function(){
+            popUp.close()
+            popUp.style.visibility = 'hidden'
+            par.innerHTML = 'FECHOU O POPUP'
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos basicos</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bnt {
+            width: 50px;
+            background-color: blue;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="bnt">clique aqui</button>
+
+    <button id="secondBnt"></button>
+
+    <script>
+        let bnt = document.getElementById("bnt")
+        bnt.addEventListener('click', () => {
+            alert("Botão foi clicado, ó")
+        });
+    </script>
+</body>
+</html>
