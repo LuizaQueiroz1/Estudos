@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        #img1 {
+            width: 8%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        #img2 {
+            visibility: hidden;
+            width: 60%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        #img3 {
+            width: 8%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        #img4 {
+            width: 60%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="img1" src="images/woods.1.jpg" alt="woods somewere">
+        <img id="img2"  src="images//woods.2.jpg" alt="woods somewere">
+        <br>
+        <img id="img3" class="slide1" src="images/mountains.avif" alt="">
+        <img id="img4" class="slide2" src="images/mountains.avif" alt="">
+    </div>
+
+    <script>
+        let img = document.getElementById('img1');
+        let img2 = document.getElementById('img2')
+
+        let img3 = document.getElementById('img3')
+        let img4 = document.getElementById('img4')
+
+        img.addEventListener('mouseover', () => {
+            
+            img2.style.visibility = 'visible'
+        })
+
+        img.addEventListener('mouseout', () => {
+            
+            img2.style.visibility = 'hidden'
+        })
+
+        img3.addEventListener('mouseover', () => {
+            
+            img4.style.visibility = 'visible'
+        })
+
+        img3.addEventListener('mouseout', () => {
+            
+            img4.style.visibility = 'hidden'
+        })
+
+    </script>
+</body>
+
+</html>
