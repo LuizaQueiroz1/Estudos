@@ -44,3 +44,6 @@ Nunca perde o código fonte. O código não é convertido de uma só vez, mas é
 Linguagem de programação _->_ Compilação _->_ Linguagem de máquina _->_ Arquivo Binário/Executavel
 ```
 
+# Modo estrito em JavaScript:
+serve para deixar o código mais limpo e evitar erros "use strict"
+

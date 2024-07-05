@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Search</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background: #38184C;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        #search {
+            background-color: #fff;
+            padding: 17px;
+            height: 15px;
+            width: 15px;
+            border: 0;
+            outline: none;
+        }
+
+        #btn {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            transform: translate(-48px) translateY(14px);
+            
+
+        }
+
+        #btn > i {
+            background-color: #fff;
+            font-size: 35px;
+            font-weight: 800;
+            
+        }
+
+        .active.show-input {
+            padding: 1.2rem;
+            transform: transation .5s ease-in;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container active">
+        <input type="text" id="search" placeholder="Search...">
+        <button  id="btn">
+            <i class="material-symbols-outlined">search</i>
+        </button>
+    </div>
+
+    <script> 
+        const input = document.getElementById('search');
+        const open = document.getElementById('btn');
+        let isOpen = false
+
+        open.addEventListener('click', () => {
+            if(isOpen){
+                input.style.width = '200px'
+                input.style.transition = 'width .3s ease'
+            } else {
+                input.style.width = '15px'
+            }
+
+            isOpen = !isOpen
+        })
+    </script>
+</body>
+
+</html>

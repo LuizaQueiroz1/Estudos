@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 1.7rem;
+            font-weight: 900;            
+            margin: 10px 0;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgb(64, 173, 173);
+        }
+
+        .hidden {
+            visibility: hidden;
+            filter: blur(5px);
+            transition: all 1s;
+
+            transform: translateX(-100%);
+        }
+
+        .show {
+            visibility: visible;
+            filter: blur(0);
+            transition: all 2s;
+            transform: translateX(0);
+        }
+
+        .hidden > .first {
+            visibility: visible;
+            transition: all 2s;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hidden first">Content</section>
+    <section class="hidden ">Content</section>
+    <section class="hidden first">Content</section>
+    <section class="hidden">Content</section>
+    <section class="hidden first">Content</section>
+    <section class="hidden ">Content</section>
+    <section class="hidden first">Content</section>
+    <section class="hidden">Content</section>
+    <section class="hidden first">Content</section>
+    <section class="hidden">Content</section>
+    <section class="hidden first">Content</section>
+    <section class="hidden">Content</section>
+</body>
+
+    <script>
+        
+        const Myobserver = new IntersectionObserver ((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show')
+                } else {
+                    entry.target.classList.remove('show')
+                }
+            })
+        });
+        let elements
+         elements = document.querySelectorAll('.hidden')
+      console.log(elements)
+        elements.forEach((element) => Myobserver.observe(element) )
+
+        window.addEventListener('scroll', hiddens)
+
+        hiddens()
+        
+
+    </script>
+
+</html>

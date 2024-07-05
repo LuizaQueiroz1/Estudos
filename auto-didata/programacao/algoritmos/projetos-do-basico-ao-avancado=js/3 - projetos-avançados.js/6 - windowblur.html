@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Blur</title>
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #image {
+            background-image: url(images/mountains.avif);
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            
+
+        }
+
+        #image {
+            display: none;
+        }
+
+        @keyframes load {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #pre {
+            background-image: url(images/loading-png-image_3022825.png);
+
+            position: absolute;
+            background-position: center;
+            background-size: contain;
+            width: 90px;
+            height: 80px;
+            animation: load 2s infinite linear;
+            animation-duration: 10s;
+        }
+
+        .pre.active {}
+
+        #boxload {
+            filter: blur(2rem);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 248, 255, 0.918);
+
+        }
+    </style>
+</head>
+
+<body onload="loading()">
+
+    <div id="image"></div>
+    <div id="boxload"></div>
+    <div id="pre"></div>
+
+    <script>
+        function loading() {
+            document.getElementById('pre').style.display = 'none';
+             document.getElementById('image').style.display = 'block';
+            document.getElementById('boxload').style.filter = 'blur()'
+            
+        }
+    </script>
+</body>
+
+</html>
