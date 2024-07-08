@@ -12,13 +12,14 @@
             justify-content: center;
             align-items: center;
         }
+
         section {
             display: flex;
             justify-content: center;
             align-items: center;
 
             font-size: 1.7rem;
-            font-weight: 900;            
+            font-weight: 900;
             margin: 10px 0;
             width: 300px;
             height: 200px;
@@ -28,63 +29,86 @@
 
         .hidden {
             visibility: hidden;
-            filter: blur(5px);
-            transition: all 1s;
+            filter: blur(2px);
+            transition: 1s;
 
-            transform: translateX(-100%);
+            transform: translateX(100%);
         }
 
         .show {
             visibility: visible;
             filter: blur(0);
-            transition: all 2s;
+            transition: all 1s;
             transform: translateX(0);
         }
 
-        .hidden > .first {
+         .first {
+            visibility: hidden;
+            filter: blur(2px);
+            transition: 1s;
+
+            transform: translateX(-100%);
+        }
+
+        .show2 {
             visibility: visible;
-            transition: all 2s;
-            transform: translateX(0);
+            filter: blur(0);
+            transition: all 1s;
+            transform: translate(0);
         }
     </style>
 </head>
 
 <body>
-    <section class="hidden first">Content</section>
+    <section class="first">Content</section>
+    <section class="hidden">Content</section>
+    <section class="first">Content</section>
+    <section class="hidden">Content</section>
+    <section class="first">Content</section>
     <section class="hidden ">Content</section>
-    <section class="hidden first">Content</section>
+    <section class="first">Content</section>
     <section class="hidden">Content</section>
-    <section class="hidden first">Content</section>
-    <section class="hidden ">Content</section>
-    <section class="hidden first">Content</section>
+    <section class="first">Content</section>
     <section class="hidden">Content</section>
-    <section class="hidden first">Content</section>
-    <section class="hidden">Content</section>
-    <section class="hidden first">Content</section>
+    <section class="first">Content</section>
     <section class="hidden">Content</section>
 </body>
 
-    <script>
-        
-        const Myobserver = new IntersectionObserver ((entries) => {
-            entries.forEach((entry) => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add('show')
-                } else {
-                    entry.target.classList.remove('show')
-                }
-            })
-        });
-        let elements
-         elements = document.querySelectorAll('.hidden')
-      console.log(elements)
-        elements.forEach((element) => Myobserver.observe(element) )
+<script>
 
-        window.addEventListener('scroll', hiddens)
+    
+    const Myobserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show')
+            } else {
+                entry.target.classList.remove('show')
+            }
+        })
+    });
+    let elements
+    elements = document.querySelectorAll('.hidden')
+    console.log(elements)
+    elements.forEach((element) => Myobserver.observe(element))
 
-        hiddens()
-        
+    
 
-    </script>
+
+
+    const Myobserver2 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show2')
+            }  else {
+                entry.target.classList.remove('show2')
+            }
+        })
+    })
+
+    const elements2 = document.querySelectorAll('.first');
+    console.log(elements2)
+    elements2.forEach((element) => Myobserver2.observe(element))
+
+</script>
 
 </html>
