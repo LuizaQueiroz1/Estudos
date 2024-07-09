@@ -4,9 +4,9 @@
 # Aula 1
 
 Para que os softwares são criados?: 
-## para resolver problemas do dia a dia. 
+## para resolver problemas ou rotinas do dia a dia. 
 - Ex: a Netflix criou um software para reunir filmes e series no mesmo lugar. 
-- E Google: conseguiu resolver nos dando a oportunidade de encontrar as informações do que desejarmos na internet
+- E Google: conseguiu resolver o problema nos dando a oportunidade de encontrar as informações do que desejarmos na internet
 
 ## Para automatizar e otimizar o processo.
 calculadora, bloco de notas e as lampâdas de rua(Que reconhecem se está escurecendo para ligar a luz ou se está claro para desligar)
@@ -41,15 +41,15 @@ Ciclo de desenvolvimento de software:
 
 "Quanto mais experiente você se tornar, mais obivios ficam os caminhos que levam a solução"
 
-A resolução de um programa desde os dados coletados(e salvos) até o resulatado retornado de uma operação lógica ou aritimetica é importante
+A resolução de um programa desde os dados coletados(e salvos) até o resulatado retornado de uma operação lógica ou aritimetica é importante.
 
 # Aula 4 - O que são algorítimos e como montar algotitmos do zero 
 
-Um algoritmo são uma serie de passos lógicos e instruções a serem seguidas para a resolução de problemas
+Um algoritmo é uma serie de passos lógicos e instruções a serem seguidas para a resolução de problemas
 
-Quando um algoritmo deve ser criado? Sempre que queremos montar uma sequencia de passos lógicos para resolver o problema.
+Quando um algoritmo deve ser criado? Sempre que queremos montar uma sequencia de passos lógicos para resolver um problema.
 
-## Metódo 5Q's para montar um algiritmos:
+## Metódo 5Q's para montar um algoritmos:
 
 Analise criticamente o problema e descubra: (Tentar explicar o problema para mim mesmo em voz alta e pedir mair informações/investigar até compreender completamente o problema)
 
@@ -154,4 +154,4 @@ Resultado esperado
 
 - laços de repetição: é a definição de quantas vezes algo deve se repetir. Os laços de repetição são utéis para automatizar processos; possuem ponto de inicio e fim e podem estar atrelados a condições
 
-- coleções(Arrays, dicionarios, listas...): permitem armazenar uma coleção de dados, de forma interligadas, em um local só. Os dados podem ser de diferentes tipos 
+- coleções(Arrays, dicionarios, listas...): permitem armazenar uma coleção de dados, de forma interligadas, em um local só. Os dados podem ser de diferentes tipos.

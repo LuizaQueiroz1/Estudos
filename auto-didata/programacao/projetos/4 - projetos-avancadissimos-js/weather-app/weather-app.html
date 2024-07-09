@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title></title>
+    <link rel="stylesheet" href="weather-app.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="images-weather/search.png" alt=""></button>
+        </div>
+        <div class="weather">
+            <img src="images-weather/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images-weather/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images-weather/wind.png" alt="">
+                    <div>
+                        <p class="wind">15  km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        const apiKey = 'bc25dad6f56d52e6c01e93412b5ef243';
+        const apiURL = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore';
+
+        async function checkWeather(){
+            const response = await fetch(apiURL + `&appid=${apiKey}`)
+            let data = await response.json()
+
+            console.log(data)
+        }
+
+        checkWeather()
+    </script>
+</body>
+</html>
