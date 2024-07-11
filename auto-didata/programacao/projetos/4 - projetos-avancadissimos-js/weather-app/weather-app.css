@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 40px 37px;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ body {
     border: 0;
     outline: 0;
     background: #ebfffc;
-    color: #fff;
+    color: black;
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
@@ -54,9 +54,15 @@ body {
     width: 16px;
 }
 
-.weather-icon {
+
+
+/* .weather-icon {
     width: 170px;
     margin-top: 30px;
+} */
+
+#weather {
+   display: none;
 }
 
 .weather h1 {
@@ -64,10 +70,23 @@ body {
     font-weight: 500;
 }
 
-.weather h2 {
-    font-size: 45px;
+ h2 {
+    padding-top: .5rem;
+    margin-right: .5rem;
+    font-size: 42px;
     font-weight: 400;
     margin-top: -10px;
+}
+
+.flag-img {
+    max-width: 50px; 
+    min-height: 50px;
+    object-fit: contain;
+}
+
+.name-flag {
+    display: flex;
+    justify-content: center;
 }
 
 .details {
@@ -89,7 +108,16 @@ body {
     margin-right: 10px;
 }
 
-.humidity, .wind {
+.humidity,
+.wind {
     font-size: 20px;
     margin-top: -6px;
+}
+
+.error {
+    text-align: left;
+    font-size: 20px;
+    margin: .5rem 0 0 .5rem;
+    color: black;
+    display: none;
 }

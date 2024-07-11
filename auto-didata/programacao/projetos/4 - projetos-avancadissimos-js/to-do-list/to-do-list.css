@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(320deg, #965be9, #092640, #261630);
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+   color: black;
+    background-color: #fff;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    padding: 30px 0;
+    height: 250px;
+    max-height: fit-content;
+    border-radius: 15px;
+}
+
+.card h1 {
+    color: #164773;
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+.to-do-app {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8d8cf98;
+    width: 85%;
+    height: 60px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.card #add {
+    position: relative;
+    width: 350px;
+    max-width: 360px;
+    border-radius: 15px;
+    height: 40px;
+    outline: none;
+    background: transparent; 
+    border: none;
+    
+
+   
+}
+
+.card #btn {
+    margin-top: .8rem;
+    background: #FF520D;
+    border: none;
+    padding: 1.4rem 2.8rem;
+    margin-bottom: .7rem;
+    border-radius: 22px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.check {
+    padding-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+   
+    padding-left: 40px;
+}
+
+#unchecked-png {
+    width: 20px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+#li {
+    list-style-type: none;
+}
+
+/** li = <del>li</>**/
