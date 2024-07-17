@@ -1,63 +1,73 @@
 const todoInput = document.getElementById('add')
 const uncheckedBnt = document.getElementById('unchecked-png')
 const bntInput = document.getElementById('btn')
+const listContainer = document.getElementById('list-container')
 
-const li = document.querySelector('#li')
+
+
+
+
 
 //functions
 
-function addToDo(){
-    let todos = getTodos()
 
-    if(todoInput){
-        todos.push(todoInput)
+function addTodo() {
+    let span = document.createElement('span')
 
-        localStorage.setItem('todo', JASON.stringify(todos))
+    if (todoInput.value === '') {
+        alert('You must write something')
+    } else {
+        const li = document.createElement('li')
+        li.classList.add('removeItem')
+        li.innerHTML = todoInput.value
+        listContainer.appendChild(li)
+        li.style.listStyleType = 'none'
 
-        document.getElementById('add').value = ''
+
+        span.innerHTML = '\u00d7'
+        li.appendChild(span)
+
     }
-    document.location.reload(true)
+
+    todoInput.value = '';
+
+    saveData();
+    
 }
 
-function getTodos(){
-    let todos = []
-
-    let todosString = localStorage.getItem('todos')
-
-    if(todosString != null){
-        return JASON.parse(todosString)
-    }
+function saveData(){
+    localStorage.setItem('todos', JSON.stringify(listContainer.innerHTML))
 }
 
-function showTodos(){
-    let todos = getTodos()
-
-    let html = "<ul>"
-
-    todos.forEach(function(elemento, index) {
-        html + '<li>' + elemento  + '<button class="remove" id="' + index +'">remover</button></li>'
-    });
-
-    html += '</ul>';
-
-    let buttons = document.getElementsByClassName("remove")
-
-    for(let i = 0; i < buttons.length; i++ ){
-        buttons[i].addEventListener('click', removeTodo)
-    }
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem('todos')
 }
 
-function removeTodo(){
-    let id = this.getAttribute('id')
-}
-
+showTask()
 
 
 //Events
 
-bntInput.addEventListener('click', () =>{
-    li.innerHTML = todoInput.value
-    
+bntInput.addEventListener('click', () => {
+    addTodo()
+
 })
+
+
+listContainer.addEventListener('click', function (e) {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle('checked')
+        saveData()
+
+    } else if (e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();
+        saveData()
+    }
+}, false)
+
+
+
+
+
 
 

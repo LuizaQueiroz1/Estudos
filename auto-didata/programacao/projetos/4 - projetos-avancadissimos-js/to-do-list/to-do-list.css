@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(320deg, #965be9, #092640, #261630);
-    height: 100vh;
-    width: 100vw;
+   
     color: #fff;
     font-family: "Lato", sans-serif;
     display: flex;
@@ -15,26 +13,40 @@ body {
     align-items: center;
 }
 
-.card {
-   color: black;
-    background-color: #fff;
+.to-do-app {
     width: 100%;
-    max-width: 550px;
-    text-align: center;
-    padding: 30px 0;
-    height: 250px;
-    max-height: fit-content;
-    border-radius: 15px;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
 }
 
-.card h1 {
+
+
+.card {
+    background-image: linear-gradient(320deg, #965be9, #092640, #261630);
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.to-do-app > h1 {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
     color: #164773;
     text-align: left;
     margin-left: 1.5rem;
 }
 
+.to-do-app h1 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
 .to-do-app {
-    display: flex;
+    
 }
 
 .row {
@@ -42,16 +54,17 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #e8d8cf98;
-    width: 85%;
+    width: 100%;
     height: 60px;
     border-radius: 25px;
     margin-bottom: 25px;
-    padding-left: 10px;
-    margin-left: 20px;
+    padding-left: 12px;
+    margin-left: 2px;
     margin-top: 25px;
 }
 
 .card #add {
+    flex: 1;
     position: relative;
     width: 350px;
     max-width: 360px;
@@ -60,20 +73,24 @@ body {
     outline: none;
     background: transparent; 
     border: none;
-    
-
-   
+    color: rgb(33, 44, 44);
+    padding-left: 8px;
 }
 
 .card #btn {
     margin-top: .8rem;
     background: #FF520D;
     border: none;
-    padding: 1.4rem 2.8rem;
-    margin-bottom: .7rem;
+    padding: 1.4rem 2.6rem;
+    margin-bottom: .8rem;
     border-radius: 22px;
     cursor: pointer;
     overflow: hidden;
+}
+
+.card #btn:hover {
+    background-color: #164773;
+    color: #fff;
 }
 
 .check {
@@ -90,8 +107,68 @@ body {
     margin-right: 6px;
 }
 
-#li {
+.to-do-app ul  li {
     list-style-type: none;
+    position: relative;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 4rem;
+ 
+    color: black;
+}
+
+
+
+.to-do-app ul li::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(to-do-images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.to-do-app ul li.checked::after  {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    background-image: url(to-do-images/checked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.to-do-app ul li span:hover {
+    background-color: #ff520d33;
+    height: fit-content;
+    border-radius: 50%;
 }
 
 /** li = <del>li</>**/
