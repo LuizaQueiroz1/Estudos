@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="campoForm">
+        <label for="">Nome</label>
+        <input type="text" name="f_nome" id="f_nome">
+    </div>
+
+    <div class="campoForm">
+        <label for="">Nome</label>
+        <input type="text" name="f_idade" id="f_idade">
+    </div>
+
+    <div class="campoForm">
+        <button id="btn-add">Adicionar</button>
+    </div>
+
+    <div class="res"></div>
+
+    <script src="">
+        class Person{
+            constructor(pnome, pidade){
+                this.name=pnome
+                this.idade=pidade
+            }
+
+            getName(){
+                return this.name
+            }
+            getIdade(){
+                return this.idade
+            }
+
+            setNome(prNome){
+                this.nome=prNome
+            }
+
+            setIdade(prIdade){
+                this.idade=prIdade
+            }
+        }
+
+        const bntAdd = document.querySelector('#btn-add')
+        const res = document.querySelector('.res')
+
+        bntAdd.addEventListener('click', ()=>{
+            const p= new Person(document.querySelector('#f_nome').value, document.querySelector('#f_idade').value)
+        })
+    </script>
+</body>
+</html>
