@@ -16,3 +16,6 @@ Arquiteura não-bloquentante de thread única ou single thread
 ## NPM(node packet management) 
 
 É repositório de pacotes e bibliotecas de código aberto em JavaScript. é o maior registro de software do mundo. Qualquer um pode publicar e compartilhar código para ser utlizado em projetos de nodeJs. O npm também tem uma ferramente de linha de comando que permite interagir com o repositório, instala e desinstala pacote, gerencia versões e dependencias do projeto.
+
+O que são???
+ objeto, um método, um atributo
