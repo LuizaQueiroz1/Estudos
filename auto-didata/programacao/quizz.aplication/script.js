@@ -42,3 +42,7 @@ console.log(buttons);
 buttons.forEach((btn) => {
   btn.addEventListener("click", updatingAll);
 });
+
+// Se o radio escolhido corresponder a resposta certa, cada uma vale 10 pontos e então o usuário ganha 50 pontos
+// se acertar menos, dependendo de quanto for, ganha correspondente ao que acertar
+// O resultado sera mostrado em um box com o tanto de erro e acertos! Fazer isso certinho, Larissa. Você consegue!

@@ -25,6 +25,7 @@ body {
   background: #fff;
   /* display: flex; */
   display: none;
+  border-radius: 10px;
 }
 
 h1 {
