@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Product Filter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+
+      <div id="buttons">
+        <button class="button-value" value="All">All</button>
+        <button class="button-value" value="Topwear">Topwear</button>
+        <button class="button-value" value="Bottomwear">Bottomwear</button>
+        <button class="button-value" value="Jacket">Jacket</button>
+        <button class="button-value" value="Watch">Watch</button>
+      </div>
+      <div id="products"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
