@@ -25,3 +25,8 @@
 - Me and my boyfried met in the elementary school, but didn't talk at  that time and our lives took differen paths, but in the middle of 2021 we meet again and star talking next to my moms house. 
 - Now que are a bond and have a enduring relationship based on mutual respect and love, that thrives for almost three years now. 
 - We are married now and every day we try to be resilient, to endeavors all the challenges that we gonna face, overcoming milestones in our journeys.
+
+
+conquer
+gruesome mistake
+in a draw
