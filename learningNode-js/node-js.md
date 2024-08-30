@@ -50,7 +50,21 @@ O node.js também vem com um conjunto de módulos integrados que facilitam a cri
 - Js em todos os lugares
 - Ecossistema gigante
 - Produtividade
-- Renderização do lado do sevidor
+- Renderização do lado do servidor
+
+### Motor do node.js
+
+Aqui vai uma visão simplificado de como o motor no node.js funciona:
+
+- Analise léxica e sintática: O código javaScript é lido e analisado pelo moto do node.js. Ele passa por um processo de análise léxica e sintática para entender as palavras-chaves, os operadores, os identificadores e outros elementos JavaScript.
+
+- Criação de uma árvore de análise sintética: com base na analise léxica e sintática o Node.js criar uma árvore de análise sintética. Essa árvore representa a estrutura hierárquica do código JS ajudando a entender a ordem e relação entre diferentes elementos do código.
+
+- Compilação: o motor V8 no node.js faz a compilação para um código javascript de baixo nível. Durante esse processo o código é otimizado para melhorar o desempenho, apagar códigos inacessíveis ou substituindo algumas operações por outras mais eficientes.
+
+- Execução: após a compilação, o motor v8 do node.js executa o código de máquina restante. O motor interpreta o código linha por linha, interpretando as instruções e realizando operações conforme necessário.
+
+npm i -D(devDependences) typescript @types/node(os typos do node) tsx(Um compilador super ágil do typescript com S build)
 
 CDN?
 JQuery?
