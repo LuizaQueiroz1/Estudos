@@ -39,7 +39,7 @@ O node.js também vem com um conjunto de módulos integrados que facilitam a cri
 - _Servidor Web_: o node.js pode ser usado para criar servidores altamente escaláveis e eficientes
 - _Desenvolvimento de aplicativos de rede_: O node JS é adequado para a criação de aplicativos de rede, como servidores de chat em tempo real, sistemas de mensagens, APIs RESTful e microsserviços.
 - _Gerenciamento de pacotes_: com o NPM
-- \*Build de ferramentas e automação: o node.js é frequentemente usado para criar ferramentas delinha de comando e automação de tarefas
+- \*Build de ferramentas e automação: o node.js é frequentemente usado para criar ferramentas de linha de comando e automação de tarefas
 - _Aplicativos desktop_
 -
 
@@ -56,9 +56,9 @@ O node.js também vem com um conjunto de módulos integrados que facilitam a cri
 
 Aqui vai uma visão simplificado de como o motor no node.js funciona:
 
-- Analise léxica e sintática: O código javaScript é lido e analisado pelo moto do node.js. Ele passa por um processo de análise léxica e sintática para entender as palavras-chaves, os operadores, os identificadores e outros elementos JavaScript.
+- Analise léxica e sintática: O código javaScript é lido e analisado pelo motor do node.js. Ele passa por um processo de análise léxica e sintática para entender as palavras-chaves, os operadores, os identificadores e outros elementos JavaScript.
 
-- Criação de uma árvore de análise sintética: com base na analise léxica e sintática o Node.js criar uma árvore de análise sintética. Essa árvore representa a estrutura hierárquica do código JS ajudando a entender a ordem e relação entre diferentes elementos do código.
+- Criação de uma árvore de análise sintética: com base na analise léxica e sintática o Node.js cria uma árvore de análise sintética. Essa árvore representa a estrutura hierárquica do código JS ajudando a entender a ordem e relação entre diferentes elementos do código.
 
 - Compilação: o motor V8 no node.js faz a compilação para um código javascript de baixo nível. Durante esse processo o código é otimizado para melhorar o desempenho, apagar códigos inacessíveis ou substituindo algumas operações por outras mais eficientes.
 
