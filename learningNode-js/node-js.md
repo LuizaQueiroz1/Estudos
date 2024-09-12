@@ -70,4 +70,17 @@ CDN?
 JQuery?
 
 A arquitetura do node é baseada em events loops
+
 dino VS node
+
+### EventEmitter:
+
+O eventsEmitter fornece uma maneira eficiente e flexível de lidar com eventos e notificações assíncronas.
+O eventEmitter é uma classe fundamental no node.js, que permite a implementação do design Observar ou (Pub/Sub), onde objetos podem emitir eventos e outros objetos podem se inscrever(ouvir) esses eventos e responder a ele.
+
+Razoes pela qual entender e trabalhar com o eventEmitter no node.js é valioso:
+
+- Modelo de programação assíncrono
+- Notificações e comunicação eficiente
+- Tratamento de erros
+- Integração com bibliotecas e frameworks e muito mais...
