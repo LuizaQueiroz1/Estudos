@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Split lanfing page</title>
-    <link rel="stylesheet" href="8 - split-landing-page.css">
-</head>
+    <link rel="stylesheet" href="8 - split-landing-page.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="split left">
-            <h1>Playstation 5</h1>
-            <button class="btn">Buy Now</button>
-        </div>
-        <div class="split right" alt="">
-            <h1>Xbox Series X</h1>
-            <button class="btn">Buy Now</button>
-        </div>
+      <div class="split left">
+        <h1>Playstation 5</h1>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="split right" alt="">
+        <h1>Xbox Series X</h1>
+        <button class="btn">Buy Now</button>
+      </div>
     </div>
 
     <script>
-        const left = document.querySelector('.left')
-        const right = document.querySelector('.right')
-        const container = document.querySelector('.container')
+      const left = document.querySelector(".left");
+      const right = document.querySelector(".right");
+      const container = document.querySelector(".container");
 
-        left.addEventListener('mouseenter', () => { container.classList.add('hover-left')})
-        left.addEventListener('mouseleave', () => { container.classList.remove('hover-left')})
+      if (!container.classList.contains("hover-left")) {
+        left.addEventListener("mouseenter", () => {
+          container.classList.add("hover-left");
+        });
+      }
 
-        right.addEventListener('mouseenter', () => { container.classList.add('hover-right')})
-        right.addEventListener('mouseleave', () => { container.classList.remove('hover-right')})
+      if (!container.classList.contains("hover-right")) {
+        right.addEventListener("mouseenter", () => {
+          container.classList.add("hover-right");
+        });
+      }
+      right.addEventListener("mouseleave", () => {
+        container.classList.remove("hover-right");
+      });
     </script>
-</body>
-
+  </body>
 </html>

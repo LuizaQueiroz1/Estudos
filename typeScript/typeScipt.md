@@ -4,18 +4,18 @@
 
 TypeScript é uma linguagem orientada a objetos, com forte tipagem e compilador.
 
-Mais pontos impotantes a serem mencionados:
+Mais pontos importantes a serem mencionados:
 
 - É open Source e desenvolvimento aberto ;
 - segue os padrões do ECMAscript;
-- Possue tipagem estática e inovadora;
+- Possui tipagem estática e inovadora;
 - Manutenção continua(por novas features)
 - Desenvolvido e mantido pela comunidade técnica
 
 ## Why TypeScript?
 
     - Add confiability to program(types)
-    - Gives new funcionalities to JS, as interfaces.
+    - Gives new functionalities to JS, as interfaces.
     - With TS, we can verify error before running the code, ou seja, on the environment.
     - Let JS more explicit, increasing the bungs.
 
@@ -30,11 +30,11 @@ Mais pontos impotantes a serem mencionados:
 - erases type
 
   Once TYpeScript compiler is done checking your code, it erases types to produce the resulting "compiled" code. It means that once your code is compiled, the resulting plain JS code has no type information.
-  That also means that never changes the behavior of your program based on the types in inferred(inferido). FInally, typeScript doesn't provide any additional runtime libraries.
+  That also means that never changes the behavior of your program based on the types in inferred(inferido). Finally, typeScript doesn't provide any additional runtime libraries.
 
 ## JS vs TS
 
-The truth is that I can learn javaScript without knowing javaScript, but I cannot forget that are more resources available about javaScript.
+The truth is that I can learn typeScript without knowing javaScript, but I cannot forget that are more resources available about javaScript.
 
 **TypeScript is a JavaSCript runtime with a compile-time type checker**.
 
@@ -42,7 +42,7 @@ The truth is that I can learn javaScript without knowing javaScript, but I canno
 
 A type is a the concept of accepting which values can be passed to a constant, variable, or a function and which will crash. JavaScript only provides dynamic typing - running the code to se what happens.
 
-The alternative is to use a static type system to make predictions about what what the code is expected to do before it run. Static type systems describes de shapes and behavios of what our values will be when we run our programs.
+The alternative is to use a static type system to make predictions about what what the code is expected to do before it run. Static type systems describes the shapes and behavior of what our values will be when we run our programs.
 
 ### TSC, the typeScript compiler(it's the type-checker)
 
@@ -63,7 +63,7 @@ function greet(person: string, date: Date) {
 }
 ```
 
-Just added type annotations on person and date to describe what tipe of values greets can be called with.
+Just added type annotations on person and date to describe what type of values greets can be called with.
 
 But I need to keep in mind that I don't need ever describe what type o values the variable has, because the typeScript interprets with the type inferation
 
@@ -115,6 +115,9 @@ To specify a type of an array I can use the sintax **number[]**
 
 ```js
 let array: number[] = [1, 2, 3, 4];
+or
+
+let array 2: Array<string | number | boolean>
 ```
 
 #### Any
@@ -135,11 +138,11 @@ obj = "Hello";
 **noImplicityAny**
 When you don't specify a type, TypeScript can't infer it from context, the compiler will default to any.
 
-I need to avoid using any, because is isn't type checked. Use the copiler flag noImplicityAny to flag any implicit any as an error.
+I need to avoid using any, because it isn't type checked. Use the compiler flag noImplicityAny to flag any implicit any as an error.
 
-### Type Annotaion on variables
+### Type Annotation on variables
 
-When you declare a variable using let, var or const, you can opcionally add a type annotation to explicitly specify the type of a variable.
+When you declare a variable using let, var or const, you can optionally add a type annotation to explicitly specify the type of a variable.
 
 ```js
 let myName: string = "Luiza";
@@ -149,7 +152,12 @@ In some cases, though, this isn't need, because TypeScript automatically infer t
 
 ### Functions
 
-TypeScritpt allows you to specify the type of both input and output values of function.
+TypeScript allows you to specify the type of both input and output values of function.
+example:
+
+```ts
+function name(name: string): string {}
+```
 
 #### Parameter types annotation
 
@@ -161,7 +169,7 @@ function greet(name: string) {
 }
 ```
 
-If you try to pass somenthing else than a string to this function, typescript will trow an error
+If you try to pass something else than a string to this function, typescript will trow an error
 
 #### Return type annotations
 
@@ -177,7 +185,7 @@ You usually don't need the return type annotation, because TypeScript infers the
 
 #### Functions which return's promises
 
-To annotate the type of a function witch return a promise, tyou should write like this:
+To annotate the type of a function witch return a promise, you should write like this:
 
 ```js
 async function getFavoriteNumber(): Promise<number> {
@@ -197,7 +205,7 @@ name.foreEach(function (s) {
   console.log(s.toUpperCase());
 });
 
-//Contextual typing also applyes to arrow functions
+//Contextual typing also apply to arrow functions
 name.foreEach((s) => {
   console.log(s.toUpperCase());
 });
@@ -205,7 +213,7 @@ name.foreEach((s) => {
 
 Even though the parameter **S** doesn't have a specify type annotation, typeScript used the type of the forEach function, along with the inferred type of the array, to determine the type **S** will have.
 
-This process is called contextual typing because the context that the function occured within informs what type it should have.
+This process is called contextual typing because the context that the function occurred within informs what type it should have.
 
 ### Object types
 
@@ -234,7 +242,7 @@ printName({ first: "Luiza" });
 printName({ first: "Lulu", last: "Larissa" });
 ```
 
-If you try to access a property that doesn't exist in JavaScript, it will return a undefined value. Because of this, whrn you read an optional property, you'll have to check for undifined before using it.
+If you try to access a property that doesn't exist in JavaScript, it will return a undefined value. Because of this, when you read an optional property, you'll have to check for undefined before using it.
 
 ```js
 function printName(obj: { first: string, last?: string }) {

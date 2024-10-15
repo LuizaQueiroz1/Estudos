@@ -15,4 +15,4 @@ Nas classes podem haver atributos públicos e privados
 
 - Quando voce desejar proteger o acesso a um atributo;
 - Quando você pricasa colocar uma lógica adicional para acessar ou definir um valor;
-- Retornar um valor calculado
+- Retornar um valor
