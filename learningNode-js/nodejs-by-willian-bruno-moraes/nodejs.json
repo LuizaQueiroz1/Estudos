@@ -1,0 +1,17 @@
+[
+  {
+    "key": "value",
+    "name": "lulu",
+    "favoriteNumbeer": 3,
+    "IsSheaProgrammer": true,
+    "hobbies": [
+      "play basketball",
+      "swimmy "
+    ],
+    "friends": [
+      {
+        "name": "Juliana"
+      }
+    ]
+  }
+]
