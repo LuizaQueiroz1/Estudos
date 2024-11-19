@@ -42,15 +42,25 @@ Há muito mais links e posso encontra-los na parte do Menu no site Coursera, no 
 "Se você pensa que pode ou não pode, você está certo" Henry Ford
 
 aprender por osmose
-estar no nívek b1 em ingles é bom
+estar no nível b1 em ingles é bom
 ordinária significado
 estigma
 Benny Lewis
 mnemônicos
 
-chuncks: are compact packs of information that my mind can easily access
+chunks: are compact packs of information that my mind can easily access
 
 overlearning : it can ingrain information in my mind or
 a little digging deeper ruts as you might spin your wheels ineffectively in english
 
-interliving
+interleaving
+
+A chunk is a way of compressing information much more compactly.
+When you have many chunks, you can call it as a collection or a library of neural patterns.
+
+There are two ways to figure something out or to solve a problem:
+
+- first, for sequential(uses de focused mode) => step-by-step reasoning.
+- Second, through more holistic(global).(use the diffuse mode) intuition.
+
+Law of Serendipity - Lady Luck favors the one who tries
