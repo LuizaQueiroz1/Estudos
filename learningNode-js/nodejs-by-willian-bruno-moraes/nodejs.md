@@ -542,3 +542,74 @@ Projeto físico do banco de dados
 - esquema lógico de dados
 
 oneroso, instância
+
+### Construindo uma API RESTful
+
+Uma API(Application Programing Interface) é um conjunto de rotinas e padrões estabelecidos por um software para a utilização de suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação, mas apenas usar seus serviços.
+
+O framework express é minimalista e flexível para o desenvolvimento web. Nós o utilizamos para gerenciar rotas da nossa aplicação.
+
+Uma rota é um caminho até um recurso. É onde declaramos em qual endereço vamos interpretar as requisições que serão enviadas para as nossa aplicação web, e aí responder o que foi solicitado
+
+#### Middlewares
+
+Um Middlewares é uma função que intercepta cada requisição que a aplicação recebe e realiza algum processamento, podendo delegar ao próximo middleware o restante da execução, ou responder, finalizando assim o ciclo de vida desse request. Um middleware pode:
+
+Um middleware, assim como um garçom, atua como intermediário entre o client e o servidor, para garantir que as respostas sejam entregues aos clientes de formas adequadas. Os middleware pode adequar os pedidos para atender as necessidades do servidor e vice-versa.
+
+- executar qualquer código
+- alterar os objetos request e response
+- chamar o próximo middleware da cadeia, por meio da função next
+- terminar o ciclo request response
+
+Pelo método app.use, declaramos os middlewares do express. Toda requisição é respondida po um callback do tipo:
+
+```js
+  function (request, responde, next) {}
+    OU
+  (request, response, next) => {}
+```
+
+Detalhando cada um dos parâmetros:
+
+- Object err - é um objeto de erro do tipo Error e so aparece como primeiro argumento do middleware de erros. Ex.:
+
+```js
+const err = new Error('something happened') err.status = 501
+```
+
+- Object request - nesse objeto, temos acesso as informações da solicitação que chegou à nossa aplicação, como cabeçalho, corpo, método, URL, querystring, parâmetros, user agent, IP etc.
+- Object response - é nosso para manipular da forma que quisermos. Tem funções para responder à requisição, então conseguimos devolver um status code, escrever na saída, encerrar, enviar JSON, texto, cabeçalhos, cookies etc.
+- Função next - essa função repassa a requisição para outro middleware na cadeia, caso precisemos, por exemplo, manipular alguma coisa do request e então repassar para outro middleware terminar de responder a requisição.
+
+##### Entendendo a Utilidade de middlewares
+
+Usamos middlewares para tratar requisições(requests) que o servidor vai receber.
+
+#### CORS (Cross-origin resource sharding)
+
+A sigla CORS significa compartilhamento de recursos entre origens desconhecidas, que é o fato de uma aplicação solicitar informações de um domínio ou subdomínio diferente do seu próprio. O comportamento padrão dos navegadores hoje em dia é bloquear esse tipo de requisição, impedindo que a aplicação seja afetada por uma resposta não confiável.
+
+Se quisermos permitir esse tipo de recurso, precisamos liberar o cabeçalho CORS da nossa API, para que qualquer cliente possa utilizar, de qualquer domínio, incluindo alguns cabeçalhos nas respostas HTTP. Para que isso seja viável, precisamos habilitar isso utilizando as seguintes configurações antes das definições de rota. Ex.:
+
+```js
+app.use((request, response, next) => {
+  response.header("Access-Control-Allow-Origin", "*");
+  response.header(
+    "Access-COntrol-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+```
+
+é importante notar que o asterisco libera para todas as origens.
+
+Outra forma de utilizar é o pacote cors, que faz a mesma coisa, e tira essa complexidade. Ex.:
+
+```js
+import cors from "cors";
+app.use(cors());
+```
+
+// Variáveis de ambiente
