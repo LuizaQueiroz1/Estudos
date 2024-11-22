@@ -613,3 +613,21 @@ app.use(cors());
 ```
 
 // Variáveis de ambiente
+
+#### Body parser
+
+Quando recebemos uma requisição com corpo (POST, PUT ou PATCH) no nodeJs, ela pode chegar a form url encoded, Form Data ou JSON. Por padrão, o expressJS 4 não entende esse formato e recebe requisições apenas por texto puro.
+
+Então, para que o navegador entenda esses formatos corretamente e já faça o parser, precisamos avisar à nossa aplicação quais os tipos de body ela aceita. Ex.:
+
+```js
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+```
+
+Feita isso, o nosso navegador está configurado para trabalhar com uma API REST.
+Note o **extend: true**, utilizado para que o parser leve em conta os objetos encadeados; do contrario, o parser seria feito apenas no primeiro nível do corpo da requisição.
+
+#### Tipos de resposta
+
+Uma das vantagens de trabalhar com o nodejs é que estamos escrevendo em JavaScript, então para fazer uma API que retorne um JSON, precisamos escrever em JSON. Não precisamos fazer um mapper, parser ou converter um array para JSON

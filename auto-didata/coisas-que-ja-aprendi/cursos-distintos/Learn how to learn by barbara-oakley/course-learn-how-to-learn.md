@@ -16,7 +16,7 @@ Técnica Pomodoro: para vencer a procrastinação. Concentra em algo por 25 minu
 
   E dormir bem também ajuda no processo de aprendizagem, pois o cerebro trabalha nos conceitos e tecnicas que você está aprendendo para fixa-los em sua mente. Um bom sono faz diferença considerável na sua capacidade de resolver problemas dificeis e compreender o que está tentando aprender.
 
-  É através de prática e repetição que somos capazes de fortalecer as estruturas neurais que construímos enquanto aprendemos algo novo. Pratica e repetição são particularmente mais importantes para tópicos abstratos
+  É através de prática e repetição que somos capazes de fortalecer as estruturas neurais que construímos enquanto aprendemos algo novo. Pratica e repetição são particularmente mais importantes para tópicos abstratos.
 
   ## Tipos de memória:
 
@@ -26,7 +26,7 @@ Técnica Pomodoro: para vencer a procrastinação. Concentra em algo por 25 minu
 
 ///
 
-## Links para artigos ciêntificos sobre a memória
+## Links para artigos científicos sobre a memória
 
 Há muito mais links e posso encontra-los na parte do Menu no site Coursera, no curso Learn how to learn, no tópico "Leituras adicionais e entrevistas opcionais" > "Leitura: pensamento focalizado versus pensamento difuso"
 
