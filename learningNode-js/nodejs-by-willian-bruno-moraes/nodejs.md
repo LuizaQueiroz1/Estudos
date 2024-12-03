@@ -543,7 +543,7 @@ Projeto físico do banco de dados
 
 oneroso, instância
 
-### Construindo uma API RESTful
+## Construindo uma API RESTful
 
 Uma API(Application Programing Interface) é um conjunto de rotinas e padrões estabelecidos por um software para a utilização de suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação, mas apenas usar seus serviços.
 
@@ -630,4 +630,85 @@ Note o **extend: true**, utilizado para que o parser leve em conta os objetos en
 
 #### Tipos de resposta
 
-Uma das vantagens de trabalhar com o nodejs é que estamos escrevendo em JavaScript, então para fazer uma API que retorne um JSON, precisamos escrever em JSON. Não precisamos fazer um mapper, parser ou converter um array para JSON
+Uma das vantagens de trabalhar com o nodejs é que estamos escrevendo em JavaScript, então para fazer uma API que retorne um JSON, precisamos escrever em JSON. Não precisamos fazer um mapper, parser ou converter um array para JSON.
+
+### Cluster
+
+O cluster é uma funcionalidade nativa (uma funcionalidade nativa em uma linguagem é algo que já é um recurso que já vem integrado e pronto para uso) que permite criar múltiplos processos para melhorar o desempenho (instancias).
+
+Cluster: Conjunto de processos que trabalham em conjunto para realizar uma tarefa.
+
+Uma instância é a uma cópia individual de um objeto, classe ou processo. Em outras palavras, é uma forma concreta do que foi definido de uma forma mais abstrata.
+
+Ao utilizar funcionalidade cluster nativa do nodeJs, você cria várias instâncias (copias ou processos filhos) do seu aplicativo, distribuindo o trabalho entre elas e aproveitando melhor do recursos do seu servidor (permitindo que a aplicação seja mais rápida e escalável).
+
+Como funciona?
+
+- Processo Mestre: Quando você inicia um aplicativo Node.js com cluster, é criado um processo mestre.
+- Processos Trabalhadores: O processo mestre cria múltiplos processos filhos, chamados de trabalhadores.
+- Distribuição de Carga: O processo mestre distribui as conexões de entrada entre os trabalhadores de forma balanceada.
+- Comunicação: Os trabalhadores podem se comunicar entre si e com o processo mestre, utilizando mecanismos como mensagens ou compartilhamento de memória.
+
+Uma resolução DNS é o processo em que cada domínio é convertido para um IP antes de ser acessado.
+
+### Recuperação de falhas
+
+Um worker(processo filho) pode morrer ou cometer suicídio. Uma exceção não tratada, uma requisição assíncrona sem catch out um erro de sintaxe são falhas graves, capazes de matar o worker. Nesse tipo de situação, é importante que a aplicação consiga se recuperar e não saia do ar, pelo menis até você descobrir o motivo e corrigir o código, tratando corretamente a exceção.
+Cada vez que um worker morre, um evento pe emitido, e você pode fazer um novo fork para que a aplicação não fique sem processos aptos a responder às requisições.
+
+```js
+const onWorkerError = (code, signal) => log(code, signal);
+//utilizar essa callback é algum bloco de código
+//ex:
+cluster.on("exit", (err) => {
+  const newWorker = cluster.fork();
+  newWorker.on("error", onWorkerError);
+  log("A new worker rises", newWorker.process.pid);
+});
+```
+
+### HTTP keepalive
+
+Dá mesma forma que cada request feito no NodejS faz uma resolução DNS, independentemente se já fez anteriormente, uma nova conexão HTTP é aberta para cada request.
+Então faz sentido manter as conexões abertas e reutilizar; para isso, basta declarar a seguir no aquivo:
+
+```js
+import http from "http";
+import https from "https";
+http.globalAgent.keepalive = true;
+https.globalAgent.keepalive = true;
+```
+
+Com isso, uma vez estabelecida uma conexão HTTP, ela ficará disponível num pool para ser reutilizada num próximo request, diminuindo o tempo de resposta como um todo.
+Usando keepalive, ou seja, conexões persistentes, o tempo total para fazer os três requests menor, pois não fechamos a conexão para depois a reabrir, e sim reutilizamos uma mesma conexão, o que traz ganho de performance e tráfego de rede.
+
+### API Stormtroopers
+
+- package.json : é o arquivo de definições de um projeto NodeJs. contém a lista de dependências, nome, versão, url do Git etc.
+- config: a pasta config contém os arquivos de configuração. Nesse arquivo colocamos dados de conexão com banco de dados, URLs de web services etc. O arquivos de configuração não tem nenhuma lógica, por isso são arquivos .json.
+- server/bin/www: na pasta server/bin, colocamos o programa que será chamado pela linha de comando, o ponto de entrada para executar a aplicação. Como estamos construindo uma API RESTful, é o arquivo server/bin/www que contém o listener do servidor HTTP. Esse comportamento deve ficar isolado do resto da aplicação, para que depois escalemos a aplicação verticalmente, adicionando o comportamento de cluster, subindo um processo nodeJs para cada core do processador de máquina.
+
+Controller: um controller é responsável por entender o que o usuário solicitou no request, repassar esse pedido para algum Model ou Service e retornar a respostas.
+framework: Um framework são pedaços de código pŕe estabelecidos para que torne o desenvolvimento mais rápido e eficaz(tipo components React)
+
+- public: na pasta public ficam os arquivos estáticos: imagens, CSS e cliente-side. Essa pasta geralmente não é servida pelo nodeJS, pois queremos que o nodeJS se preocupe com tarefas dinâmicas, como consultar algo no banco de dados e não entregar um arquivo estático.
+- Views: são arquivos HTML do template, a camada de visualização que vamos apresentar para o usuário. Como esses arquivos serão processados pelo template engine, portanto são dinâmicos, eles não ficam dentro da **public**
+
+#### Mongoist
+
+O model é a camada responsável pelos dados, pela validação e consistência deles.
+
+##### MVC (model-view-controller - modelo-visão-controlador)
+
+É um padrão de arquitetura de software amplamente utilizado, principalmente no desenvolvimento de aplicações web.
+
+- Model (modelo): Representa os dados da aplicação. É a parte responsável por manipular dados, como por exemplo, consultar um banco de dados.
+- View (visão): é a interface do usuário. Tudo de visual na tela. A view exibe os dados do model de uma forma organizada e iterativa.
+- controller: É o responsável por intermediar a iteração entre o model e o view. Por exemplo:. quando o usuário clica em um botão, o controller é responsável por atualizar o model, que após isso, decide qual view vai ser exibida ao usuário.
+
+Por que usar o MVC?
+
+- Organização do código: separar as responsabilidades da aplicação facilita a manutenção e a compreensão do código.
+- Reusabilidade: permite reutilizar componentes em diferentes partes da aplicação
+- Facilita a criação de testes unitários para cada aplicação
+- Desenvolvimento paralelo: diferentes desenvolvedores podem trabalhar em diferentes partes do código.
