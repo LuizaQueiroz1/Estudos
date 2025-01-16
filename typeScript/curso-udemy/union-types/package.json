@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start:dev": "npx tsx watch ./typeScript/curso-udemy/union-types/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0"
+  }
+}
