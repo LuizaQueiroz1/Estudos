@@ -106,3 +106,54 @@ Shovel can be both an object or activity: ex.: to shovel snow. To work with the 
 ## make it up to you
 
 when you forgot something related to other person and want to apologize to this person offering a gift, I can say: I want make it up to you
+
+## SunBurn
+
+its when you are outside for too long or in the beach even, and you don't apply the sunscreen
+
+Birds are covered in feathers(penas). Beak of the bird
+
+## Floss
+
+means to use dental floss between the teeth and gums
+
+SPF: is Sun Protection Factor
+
+## Swagger
+
+is a way of walking or behaving that shows you are confidence
+
+## To bust someone out
+
+is to help one to scape from a place or thing (often prison)
+
+## Pop that cage open:
+
+a cage is an object/space surrounded all sides by bars or wire, in which animals and bird are kept.
+
+To pop something open means to open(something) suddenly and quickly or movement related to doing it.
+
+## Robust
+
+Something strong, solid or healthy
+Other words to say robust: sturdy, vigorous, hearty
+
+## suit yourself
+
+is an expression either humorously or angrily to mean "do what you want to do"
+
+## Flap
+
+is the wave movement that a bird's wings does when flying
+
+## To thrust
+
+means to push something somewhere, suddenly and strongly
+
+## To lift
+
+means to move something from a lower to a higher position
+
+## To drag
+
+means to move something by pulling it along a surface, usually the ground
