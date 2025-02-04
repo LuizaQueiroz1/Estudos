@@ -181,3 +181,88 @@ quando retorna um objeto em JSX é utilizado ()
 - O textarea pode ser considerado um input de texto normal
 - Utilizaremos o value para alterar o state inicialização
 - E o evento onChange para modificar o valor do state
+
+Pesquisar esse erro: 'React' refere-se a uma UMD global, mas o arquivo atual é um módulo. Considere adicionar uma importação.
+
+## Requisições HTTP com React
+
+### Json Server
+
+- O json Server é um pacote npm
+- Ele simula uma API, e isso nos possibilita testar requisições HTTP
+
+### A importância do useEffect
+
+- O useEffect faz com que uma alteração seja executada apenas uma vez
+- isso é importante porque os componentes estão sempre se re-renderizando, então precisamos ter opções únicas às vezes
+- O useEffect ainda tem um array de dependências, que deve conter os dados que ativem a execução da função de forma automática
+- O useEffect estará sempre em requisições assíncronas!
+
+### Resgatando dados com React
+
+- para trazer dados, temos que utilizar vários recursos:
+- primeiramente ter um local para salva-los (useState);
+- Renderizar a chamada apenas uma vez (useEffect);
+- um meio de fazer a requisição assíncrona (fetch API)
+
+### Adicionando dados
+
+- Para adicionar um item vamos precisar resgatar os dados do form com useState
+- Reunir eles em uma função após o submit e enviar um request de post para a nossa API
+- O processo é bem parecido com o resgate de dados, mas agora estamos enviando dados.
+
+### Custom hook para o fetch
+
+- é normal dividir funções que podem ser reaproveitadas em hooks
+- essa técnica é chamada de custom hook, e vamos criar um para o resgate de dados
+- os hooks geralmente ficam na pasta hooks
+- devemos utilizar o padrão useName
+- basicamente criamos uma função e exportamos ela
+
+### Estado de Loading
+
+- Quando fizermos requisições para API's é normal que haja um intervalo de reload entre as requests e responses
+- Podemos fazer isso no nosso hook também
+- identificar quando começa e termina esse estado
+
+#### Estado de loading no post
+
+- Podemos bloquear ações indevidas em outras requests também, como o post
+- Uma ação interessante é remover a ação de adicionar outro item enquanto o request ainda não finalizou
+
+## React Router
+
+- Serve para fazer projetos com paginação
+- Permite que nossas SPAs tenham múltiplas páginas
+- também temos outras funções como: Redirect, Nested Routes, Not Found Routes e outros
+
+### Configurando o React Router
+
+- para configurar o react router temos que importar três elementos do react-router-dom;
+- Browser Router: define onde é a área do nosso app que vai trocar as páginas
+- Routes: define as rotas
+- Route: cada rota tem esse elemento, onde se define o path o componente da rota;
+
+### Nested Routes
+
+- As nested routes indicam URLs mais complexas, como: /products/:id/something
+- Neste caso vamos precisar de um componente que corresponda com o padrão indicado e também a URL em App.js
+- Na Nested routes teremos o acesso ao parâmetros da URL também.
+
+### Search Params
+
+- É um recurso que permite obter o que vem na URL em forma de parâmetro, ex: produtos?q=camisa
+- Utilizamos o hook useSearchParams para obtê-los
+- Com esse recurso fica fácil fazer uma funcionalidade de busca no sistema
+
+### Redirect
+
+- Serve para redirecionar para páginas eventualmente;
+- exemplo: uma página antiga do sistema responde agora a uma nova URL
+
+## Context API
+
+- É um recurso que facilita o compartilhamento de um estado entre componentes
+- Ou seja, quando precisamos de dados globais, utilizaremos o context API
+- O Context precisa encapsular os containers que receberão os seus valores, geralmente colocamos no App.jsx ou index.jsx
+- os contexts ficam geralmente na pasta context
