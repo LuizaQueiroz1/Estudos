@@ -8,10 +8,10 @@ uma das tecnologias mais utilizadas no mundo
 
 ### A arquitetura javaScript é dividida em:
 
-Arquiteura não-bloquentante de thread única ou single thread
+Arquitetura não-bloqueante de thread única ou single thread
 
-- Call stack - responsável por empilhar as chamdas de funções
-- Callback Queue - reponsável por empilhar e fazer as chamadas das funções calbacks(Assincronas)
+- Call stack - responsável por empilhar as chamadas de funções
+- Callback Queue - responsável por empilhar e fazer as chamadas das funções callbacks(Assíncronas)
 - Event Loop - verificar se algum evento assincrono foi disparado executando sua respectiva callback.
 
 ## NPM(node packet management)
