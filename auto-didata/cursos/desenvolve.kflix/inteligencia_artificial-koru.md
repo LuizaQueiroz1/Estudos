@@ -202,7 +202,7 @@ Fazer um logo da minha marca com a IA
 Negócio digital com IA
 
 Ferramentas para usar no negócio digital 
-
+ 
 Estudar no site learn Prompting
 
 Baselabs e Heygen(faz video com ia ou clone da sua voz e rosto)

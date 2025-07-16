@@ -85,3 +85,103 @@ A planilha é feita para apresentar um pequeno conjunto de informações, pois �
 ### Aula 1 - Introdução a visualização de dados
 Por que organizar os dados?
 A organização dos dados facilita a leitura, evita erros de interpretações, economiza tempo ao buscar informações 
+
+**Gráficos são uma forma visual de representar dados**
+
+Tipos de gráficos e quando usa-los
+- Transforma dados em informações visuais para fácil interpretação
+- Facilitam a comparação e análise de tendências
+- Diferentes tipos de graficos são usados para diferentes finalidades
+
+**Principais tipos de gráficos abordados**
+- Gráficos de Barras(Comparação de valores entre categorias. Ex.: Número de vendas por produto)
+
+- Gráficos de Linhas(Tendência ao longo do temp0. Ex.: Evolução mendal do faturamento)
+
+- Gráficos de Pizza(Proporção entre categorias. Ex.: Percentual de vendas por tipo de produto)
+
+### Aula 2 - Criação de tabela dinâmica
+
+O que é uma tabela dinâmica
+- Permite resumir e analisar grandes volumes de dados de forma interativa
+- Facilita agrupamentos e cálculos sem alterar a base original
+
+Analise e destaque de dados no google sheets 
+
+## Módulo 4 - Decisões baseadas em dados
+
+### Aula 1 - Decisões inteligentes: Transformando dados em ação 
+
+O que são decisões tomadas baseadas em dados?
+- Decisões tomadas com base em evidências extraídas dos dados
+- Substitui intuição por análise lógica
+- Reduz incertezas e melhora resultados
+
+Exemplo prático: Uma loja analisa os produtos mais vendidos para definir quais itens manter no estoque
+
+A análise de dados podem resolver diversos problemas como:
+- Empresas: melhorar vendas, prev er demandas, reduzir custos
+- Saúde: Indentificar tendências de doenças, melhorar atendimento
+- Educação: Avaliar desenpenho de alunos e ajustar estratégias
+
+Exemplo prático:
+- Um restaurante usa dados para prever o movimento e otimizar compras de ingredientes.
+
+
+### Aula 2 - Identificação de padrões nos dados para tomar decisões estratégicas
+
+
+### Aula 3 - Como analisar gráficos e tirar insights
+
+Erros comuns na leitura de gráficos:
+
+Escala inconsistente no eixo Y
+Correção: usar uma escala uniforme para apresentar os dados corretamente
+
+Ordenação confusa das categórias
+Correção: Organizar os dados em ordem crescente ou decrescente para facilitar a leitura
+
+Falta de rótulos explicativos
+Correção: Sempre incluir um título descritivo e rótulos para os eixos dar contexto ao leitor
+
+A leitura correta de gráficos e a análise eficiente de dados vão levar a resultados positivos na Análise de Dados
+
+## Aula 4 - Comunicação eficiente com os dados  
+
+Escolhendo a visualização certa
+
+Comparação de Valores - Gráficos de Barras
+Este gráfico de barras é ideal para comparar a quantidade de vendas entre diferentes produtos.
+Por que a escolha é correta?
+- Cada categoria tem um valor distinto e precisa ser comparada visualmente
+- As barrar permitem uma lçeitura clara das diferenças entres os produtos
+- O eixo Y apresenta valores exatos facilitando a análise
+
+Se usássemos um gráfico de pizza 
+- Seria mais dificil de comprar valores com precisão
+- Pequenas diferença poderiam ser dificeis de perceber
+
+Reflexão: Saber interpretar dados é essencial, mas apresenta-los de forma clara e persuasiva é igualmente importante.
+
+## Módulo 5 Introdução ao projeto de gastos
+
+Revisão do curso:
+
+O que são Dados: Diferença entre dado, e informação:
+
+Dados são informações que podemos coletar, mensurar(medir), analisar e gerar conhecimento.
+
+Sempre que queremos resolver um problema ou responder a uma pergunta, recorremos a dados
+Exemplos:
+"Qual é a pizzaria que tem a pizza mais barata e saborosa aqui perto de casa?"
+
+Dado: 5
+Informação: 5 mg de Diazepam
+Conhecimento: Paciente apresentou melhoras no quadro de pressão arterial 
+
+Planilha VS Bancos de dados:
+Comparação: A planilha é ideal para poucas informações, pois é difícil escalar. O Banco de Dados faz o gerência de milhares de registros de forma estruturada
+
+Estrutura de Banco de Dados - DER(Diagrama, identidade, relacionamento), 
+
+"O pessimista se queixa do vento. O otimista espera que ele mude. O realista ajusta as velas" William Arthur Ward
