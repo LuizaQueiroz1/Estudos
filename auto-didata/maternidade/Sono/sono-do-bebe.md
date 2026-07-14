@@ -85,3 +85,145 @@ a) De zero a seis meses(6;27): vigília (calma ou agitada); sono ativo; sono qui
 b) De seis a doze meses(28,29): acordado; sono NREM; sono REM; tempo de movimento ou movimento de despertar.
 
 O sono é classificado como indeterminado quando não preenche os critérios de sono ativo ou quieto, ou seja, quando essas fases se apresentam desorganizadas
+
+## Atividades Sugeridas - 0 a 6 meses
+
+## 📅 Faixa Etária e Atividades
+
+### 👶 0 a 1 mês (Tempo acordado: 30–45 min)
+
+- Tummy time (1–2 min)
+- Conversa suave
+- Canto de ninar
+- Olhar para o rosto da mãe/pai
+- Toque com tecidos macios
+
+### 👶 1 a 2 meses (Tempo acordado: 45 min – 1h)
+
+- Tummy time (3–5 min)
+- Mostrar brinquedos preto e branco
+- Música calma
+- Movimentos leves com braços e pernas
+- Passeio breve em ambiente claro
+
+### 👶 2 a 3 meses (Tempo acordado: 1h – 1h15)
+
+- Tummy time (5–7 min)
+- Espelho seguro
+- Livros com imagens grandes
+- Sons de chocalho
+- Estímulo tátil com diferentes texturas
+
+### 👶 3 a 4 meses (Tempo acordado: 1h15 – 1h30)
+
+- Tummy time (10 min)
+- Brincar com brinquedos leves
+- Conversa com expressões faciais
+- Leitura de livrinhos
+- Alongamento suave
+
+### 👶 4 a 5 meses (Tempo acordado: 1h30 – 1h45)
+
+- Tummy time com brinquedos
+- Estímulo para rolar
+- Música com movimentos
+- Explorar objetos com as mãos
+- Passeio ao ar livre
+
+### 👶 5 a 6 meses (Tempo acordado: 1h45 – 2h)
+
+- Incentivar rolar e apoiar
+- Brincar sentado com apoio
+- Estímulo para pegar objetos
+- Cantar e dançar com o bebê no colo
+- Livros interativos
+
+---
+
+## 🧡 Dicas Gerais
+
+- **Sinais de cansaço**: bocejar, esfregar os olhos, olhar perdido — respeite e prepare para o sono.
+- **Repetição é essencial**: bebês aprendem com rotina e repetição.
+- **Segurança sempre**: supervisione todas as atividades, especialmente tummy time e objetos pequenos.
+
+## Ambiente de sono para o bebê
+
+### 🌞 Ambiente de Sono Durante o Dia
+
+Luz natural: mantenha o ambiente claro, com cortinas abertas ou luz suave.
+
+Ruídos normais da casa: não é necessário silêncio absoluto — isso ajuda o bebê a diferenciar o sono diurno do noturno.
+
+Temperatura agradável: entre 22°C e 24°C, com roupas leves.
+
+Berço ou local seguro: mesmo durante o dia, o bebê deve dormir em um local seguro, como o berço ou moisés.
+
+Evite cochilos muito longos: cochilos diurnos devem ser distribuídos ao longo do dia e não ultrapassar 2h seguidas.
+
+### 🌙 Ambiente de Sono Durante a Noite
+
+Escuro ou com luz bem suave: use uma luz noturna fraca, se necessário.
+
+Silêncio ou sons calmantes: evite barulhos altos; ruído branco pode ajudar.
+
+Rotina consistente: banho, massagem, amamentação, música calma — tudo em sequência para sinalizar que é hora de dormir.
+
+Evite estímulos visuais e físicos: nada de brincadeiras agitadas ou telas.
+
+Berço seguro e confortável: colchão firme, sem travesseiros, cobertores soltos ou brinquedos.
+
+## 🧸 Ferramentas úteis para auxiliar no sono do bebê
+
+### 🛏️ Produtos físicos
+
+- Naninhas: objetos de transição que trazem conforto e segurança.
+- Luz noturna suave: cria um ambiente acolhedor sem estimular demais.
+- Monitor de bebê: permite acompanhar o sono à distância.
+- Roupas de cama adequadas: lençóis macios e cobertores leves.
+- Charutinho (Swaddle)
+
+### 📱 Aplicativos
+
+- Sound Sleeper: biblioteca de sons calmantes (útero, água, aspirador).
+- Baby Sleep Sounds: ruído branco e sons naturais.
+- Glow Baby: rastreia sono, mamadas e fraldas.
+- Huckleberry: ajuda a prever janelas de sono com base em dados reais.
+
+## 😴 O que são associações de sono negativas?
+
+São comportamentos que o bebê associa ao ato de dormir, mas que exigem a presença ativa de um adulto ou de um estímulo externo. Exemplos comuns incluem:
+
+- Dormir mamando ou com a mamadeira.
+- Ser ninado no colo até adormecer.
+- Precisar da chupeta para iniciar o sono.
+- Ser balançado no carrinho ou no carro.
+
+Essas práticas podem funcionar bem no início, mas com o tempo, o bebê pode acordar várias vezes durante a noite e precisar repetir o mesmo estímulo para voltar a dormir
+
+### 🚫 Por que são consideradas negativas?
+
+- Criam dependência externa para dormir.
+- Aumentam os despertares noturnos.
+- Podem gerar cansaço nos pais, que precisam intervir constantemente.
+- Dificultam o desenvolvimento da autonomia do sono.
+
+### ✅ Como evitar ou corrigir essas associações?
+
+Segundo especialistas, o ideal é ajudar o bebê a desenvolver associações positivas e independentes:
+
+#### 🧘‍♀️ Estabeleça uma rotina consistente
+
+- Banho morno, massagem, pijama, história de ninar.
+- Repita a mesma sequência todas as noites.
+
+#### 🛏️ Coloque o bebê no berço ainda acordado
+
+- Isso ajuda o bebê a aprender a adormecer sozinho.
+
+#### 🧸 Use objetos de transição
+
+- Como naninhas ou cobertores especiais que trazem conforto sem exigir ação dos pais.
+
+#### 🕰️ Faça transições suaves
+
+- Se o bebê dorme mamando, tente alimentar antes da rotina e colocá-lo no berço ainda desperto.

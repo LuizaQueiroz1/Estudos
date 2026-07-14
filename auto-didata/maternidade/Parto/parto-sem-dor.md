@@ -1,6 +1,6 @@
 # parto sem dor By Pierre Vellay
 
-Desde que o parto perdeu as condiçõess naturais de rapidez e ausencia de dor, dos povos primitivos, foram as preocupações da mulher grávida: s fidtocia, infecção e a dor. 
+Desde que o parto perdeu as condiçõess naturais de rapidez e ausencia de dor, dos povos primitivos, foram as preocupações da mulher grávida: s fidtocia, infecção e a dor.
 
 - A distoccia é toda alteração de posição, conformação da bacia da mulher ou do bebê, que perturba a evolução natural do sexo.
 
@@ -15,7 +15,7 @@ Quando o ciclo de medo-tenção-dor é rompido através da educação, o parto v
 Método psicoprofilático
 
 Pensamentos:
-O doutor Lamaze sempre se via empolgado e proativo para descobrir como fazer as mulheres term um parto sem dor. E um médico disse: Daqui a 20 anos a nova geração de mulheres lembrará Lamaze com gratidão, pois ele alterou fundamentalmente o parto, e mesmo a condição de mulheres no mundo ocindental." 
+O doutor Lamaze sempre se via empolgado e proativo para descobrir como fazer as mulheres term um parto sem dor. E um médico disse: Daqui a 20 anos a nova geração de mulheres lembrará Lamaze com gratidão, pois ele alterou fundamentalmente o parto, e mesmo a condição de mulheres no mundo ocindental."
 O que o Dr. Lamarte pensaria se descobrisse que decadas se passaram e ainda continuamos tão primitivos como animais? Que sua educção sobre o parto se perdeu no meio do caminho e muitas mulheres sofrem com a dor e desespero pela falta de conhecimento? E se ele soubesse que tratamos a cesária como uma solução maravilhosa contra as dores do parto, como ele se sentiria?
 Como ele se sentiria ao saber, que após lutar tanto para que o seu método psicoprofilatico fosse difundido, no século XXI, continuamos a demonizar o parto normal de uma forma compulsiva pelo convívio social e pelas redes socias?
 
@@ -25,19 +25,20 @@ A dor do parto, sua manifestção, caráter e intensidade depende do sistema ner
 
 ### Noções gerais sobre o método
 
-A psicoprofilaxia é uma analgesia por meio da palavra, baseada no aprendizado da mulher gravida. 
+A psicoprofilaxia é uma analgesia por meio da palavra, baseada no aprendizado da mulher gravida.
 A busca pelo equilibrio do cérebro(contéx) da parturiente se dá pela criação de refleexos condicionados.
 Ao estudar, a mulher entende o mecanismo simples do nascimento e é capaz de adaptar-se quando chea o diado seu parto. Livra-se das más influencias e lembranças previamente acumuladas e que possam inibila durante o parto.
 
-O método tem regras e disciplinas e precisa ser aplicado escrupula e inteligentemente. 
+O método tem regras e disciplinas e precisa ser aplicado escrupula e inteligentemente.
 
 Pavlov que estudou a secreção salivar do cão introuziu a ideia do reflexo como fator básico da fisiologia humana.
 
 Há dois tipos de reflexos, segundo Pavlov:
+
 - reflexos absolutos, que já são inatos a natureza humana.
 - reflexos condicionais(salivar): são os tipos de reflexos que você aprender através da existencia, pelo meio em que convive. Esses tipos de reflexos são temporários, enfraquecem e podem desaparecer, como tamber pode consolidar-se e passar a integras a espécie.
 
-Words i learned: 
+Words i learned:
 expulsive phase
 pushing expulsion
 detection
@@ -47,3 +48,15 @@ arguably
 daunting
 cerebrum
 outermost layer
+
+## Dicas para um parto sem dor:
+
+1. o que faz o bebê nascer é as contração então aceite as contrações.
+2. Resignificar a DOR, a dor do trabalho de parto é boa, é uma sensação, ciclo uma onda. Chegou o grande dia do nascimento então ACEITE as ondas. Sinta o movimento do bebê e do seu corpo, não se feche, aceite a dor como uma benção para ver seu filho ❤
+
+3. O medo contribui pra ter mais DOR, esteja em um ambiente mais íntimo e confortável. Pense no que te acalma: ficar sozinha, chuveiro, música, massagem, escuro, carinho. Criar um ambiente que lembra a sua casa.
+
+### Respiração
+
+Nos Prodromos: 4 tempos inspirando e 4 tempos expirando
+Durante as contrações: respiração cumprida, mandando o ar para baixo para dilatar o útero. Inspira 4 tempos, expira 8 tempos
